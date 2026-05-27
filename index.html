@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SİMETRİ – Selefon, Serigrafi, Bölgesel Lak & Ambalaj Matbaacılık</title>
+  <meta name="description" content="SİMETRİ; bölgesel lak, selefon kaplama, serigrafi baskı ve ambalaj matbaacılığında Ankara'nın güvenilir çözüm ortağı. Kaliteyi ve hassasiyeti bir arada sunuyoruz." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@500;600;700;800;900&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bordo: {
+              50:  '#fff0f0',
+              100: '#ffdada',
+              200: '#ffb3b3',
+              300: '#ff7a7a',
+              400: '#ff3f3f',
+              500: '#ff1111',
+              600: '#e60000',
+              700: '#c20000',
+              800: '#991b1b',
+              900: '#7a0c0c',
+              950: '#450000',
+            },
+            dark: {
+              900: '#0a0a0a',
+              800: '#111111',
+              700: '#1a1a1a',
+              600: '#242424',
+              500: '#2e2e2e',
+            },
+            silver: {
+              100: '#f8f8f8',
+              200: '#e8e8e8',
+              300: '#c8c8c8',
+              400: '#a8a8a8',
+              500: '#888888',
+            }
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.7s ease forwards',
+            'fade-in': 'fadeIn 0.5s ease forwards',
+            'shimmer': 'shimmer 2.5s infinite',
+            'float': 'float 6s ease-in-out infinite',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4,0,0.6,1) infinite',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% center' },
+              '100%': { backgroundPosition: '200% center' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+      color: #e8e8e8;
+      overflow-x: hidden;
+    }
+
+    /* CUSTOM SCROLLBAR */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #111; }
+    ::-webkit-scrollbar-thumb { background: #991b1b; border-radius: 3px; }
+
+    /* GLASSMORPHISM */
+    .glass {
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .glass-bordo {
+      background: rgba(153,27,27,0.12);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(153,27,27,0.3);
+    }
+
+    /* GRADIENT TEXT */
+    .gradient-text {
+      background: linear-gradient(135deg, #fff 0%, #c8c8c8 40%, #991b1b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .gradient-text-bordo {
+      background: linear-gradient(135deg, #ff6b6b 0%, #e60000 50%, #7a0c0c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* SHIMMER EFFECT */
+    .shimmer-bg {
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+      background-size: 200% 100%;
+      animation: shimmer 2.5s infinite;
+    }
+
+    /* BORDER GLOW */
+    .border-glow {
+      box-shadow: 0 0 20px rgba(153,27,27,0.3), 0 0 60px rgba(153,27,27,0.1);
+    }
+
+    .border-glow-hover:hover {
+      box-shadow: 0 0 30px rgba(153,27,27,0.5), 0 0 80px rgba(153,27,27,0.2);
+    }
+
+    /* HERO VISUAL MOCKUP */
+    .mockup-card {
+      background: linear-gradient(135deg, rgba(153,27,27,0.15) 0%, rgba(255,255,255,0.03) 100%);
+      border: 1px solid rgba(153,27,27,0.25);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+    }
+
+    /* NAV ACTIVE */
+    .nav-link {
+      position: relative;
+      transition: color 0.3s;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #991b1b;
+      transition: width 0.3s;
+      border-radius: 2px;
+    }
+    .nav-link:hover::after { width: 100%; }
+
+    /* SERVICE CARD SHINE */
+    .service-card {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 50%;
+      height: 200%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.06), transparent);
+      transform: skewX(-20deg);
+      transition: left 0.6s;
+    }
+    .service-card:hover::before { left: 130%; }
+    .service-card:hover {
+      transform: translateY(-8px) scale(1.01);
+      border-color: rgba(153,27,27,0.5) !important;
+      box-shadow: 0 20px 60px rgba(153,27,27,0.25), 0 0 0 1px rgba(153,27,27,0.2);
+    }
+
+    /* STATS COUNTER */
+    .stat-card {
+      background: linear-gradient(135deg, rgba(153,27,27,0.08), rgba(255,255,255,0.02));
+      border: 1px solid rgba(153,27,27,0.2);
+      transition: all 0.3s;
+    }
+    .stat-card:hover {
+      background: linear-gradient(135deg, rgba(153,27,27,0.15), rgba(255,255,255,0.05));
+      border-color: rgba(153,27,27,0.4);
+    }
+
+    /* GALLERY ITEM */
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      transition: all 0.4s;
+    }
+    .gallery-item::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(153,27,27,0.7), transparent);
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .gallery-item:hover::after { opacity: 1; }
+    .gallery-item:hover { transform: scale(1.02); box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+    .gallery-label {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      z-index: 10;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.4s;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+    .gallery-item:hover .gallery-label { opacity: 1; transform: translateY(0); }
+
+    /* INPUT FOCUS */
+    .form-input {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #e8e8e8;
+      transition: all 0.3s;
+      outline: none;
+    }
+    .form-input:focus {
+      border-color: rgba(153,27,27,0.6);
+      box-shadow: 0 0 0 3px rgba(153,27,27,0.12);
+      background: rgba(153,27,27,0.04);
+    }
+    .form-input::placeholder { color: rgba(200,200,200,0.35); }
+
+    /* MOBILE MENU */
+    #mobile-menu {
+      transition: all 0.3s ease;
+    }
+
+    /* NOISE TEXTURE OVERLAY */
+    .noise::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      opacity: 0.04;
+      pointer-events: none;
+    }
+
+    /* BLOB */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      opacity: 0.12;
+      pointer-events: none;
+    }
+
+    /* SECTION REVEAL */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* HEADER SCROLL */
+    .header-scrolled {
+      background: rgba(10,10,10,0.95) !important;
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(153,27,27,0.2);
+      box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+
+    /* ICON BG */
+    .icon-bg {
+      background: linear-gradient(135deg, rgba(153,27,27,0.2), rgba(153,27,27,0.05));
+      border: 1px solid rgba(153,27,27,0.25);
+    }
+  </style>
+</head>
+<body class="bg-dark-900 text-silver-200 font-inter antialiased">
+
+  <!-- ═══════════════════════════════════════════
+       HEADER / NAV
+  ═══════════════════════════════════════════ -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+      <!-- LOGO -->
+      <!-- LOGO -->
+      <a href="#anasayfa" class="flex items-center gap-3 group select-none">
+        <!-- Diamond Icon -->
+        <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+          <!-- Top triangle: bordo -->
+          <polygon points="50,5 95,50 50,50" fill="url(#grad_bordo)"/>
+          <!-- Left triangle: silver -->
+          <polygon points="50,5 5,50 50,50" fill="url(#grad_silver)"/>
+          <!-- Right triangle: silver -->
+          <polygon points="50,95 95,50 50,50" fill="url(#grad_silver2)"/>
+          <!-- Bottom triangle: bordo -->
+          <polygon points="50,95 5,50 50,50" fill="url(#grad_bordo2)"/>
+          <!-- Center cross lines -->
+          <line x1="5" y1="50" x2="95" y2="50" stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
+          <line x1="50" y1="5" x2="50" y2="95" stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
+          <defs>
+            <linearGradient id="grad_bordo" x1="50" y1="5" x2="95" y2="50" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#c20000"/>
+              <stop offset="100%" stop-color="#7a0c0c"/>
+            </linearGradient>
+            <linearGradient id="grad_bordo2" x1="50" y1="95" x2="5" y2="50" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#991b1b"/>
+              <stop offset="100%" stop-color="#5a0808"/>
+            </linearGradient>
+            <linearGradient id="grad_silver" x1="5" y1="50" x2="50" y2="5" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#9a9a9a"/>
+              <stop offset="100%" stop-color="#d8d8d8"/>
+            </linearGradient>
+            <linearGradient id="grad_silver2" x1="95" y1="50" x2="50" y2="95" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#c0c0c0"/>
+              <stop offset="100%" stop-color="#787878"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <!-- Text -->
+        <div class="flex flex-col leading-none">
+          <span style="font-family:'Big Shoulders Display',sans-serif; font-size:2.4rem; font-weight:900; line-height:1; letter-spacing:0.22em; background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 30%, #cc0000 70%, #8a0000 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">
+            SİMETRİ
+          </span>
+          <span class="text-silver-400 tracking-[0.12em] uppercase group-hover:text-silver-300 transition-colors" 
+                style="font-size:0.52rem; margin-top:3px; letter-spacing:0.15em;">
+            Selefon · Serigrafi · Bölgesel Lak · Ambalaj
+          </span>
+        </div>
+      </a>
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="#anasayfa" class="nav-link text-sm text-silver-300 hover:text-white font-medium tracking-wide transition-colors">Ana Sayfa</a>
+        <a href="#hizmetler" class="nav-link text-sm text-silver-300 hover:text-white font-medium tracking-wide transition-colors">Hizmetlerimiz</a>
+        <a href="#hakkimizda" class="nav-link text-sm text-silver-300 hover:text-white font-medium tracking-wide transition-colors">Hakkımızda</a>
+        <a href="#galeri" class="nav-link text-sm text-silver-300 hover:text-white font-medium tracking-wide transition-colors">Galeri</a>
+        <a href="#iletisim" class="nav-link text-sm text-silver-300 hover:text-white font-medium tracking-wide transition-colors">İletişim</a>
+      </nav>
+
+      <!-- CTA BUTTON -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="#iletisim" id="teklif-al-btn"
+           class="px-6 py-2.5 rounded-lg text-sm font-semibold text-white tracking-wide transition-all duration-300 border-glow-hover"
+           style="background: linear-gradient(135deg, #991b1b, #c20000); box-shadow: 0 0 20px rgba(153,27,27,0.4);">
+          ✦ Teklif Al
+        </a>
+      </div>
+
+      <!-- MOBILE HAMBURGER -->
+      <button id="hamburger-btn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Menü">
+        <span class="w-6 h-0.5 bg-white transition-all" id="ham-1"></span>
+        <span class="w-6 h-0.5 bg-white transition-all" id="ham-2"></span>
+        <span class="w-4 h-0.5 bg-bordo-700 transition-all" id="ham-3"></span>
+      </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="lg:hidden hidden mt-4 glass rounded-2xl p-6 mx-2">
+      <nav class="flex flex-col gap-4">
+        <a href="#anasayfa"   class="text-silver-200 hover:text-white font-medium py-2 border-b border-white/5 transition-colors" onclick="closeMobileMenu()">Ana Sayfa</a>
+        <a href="#hizmetler"  class="text-silver-200 hover:text-white font-medium py-2 border-b border-white/5 transition-colors" onclick="closeMobileMenu()">Hizmetlerimiz</a>
+        <a href="#hakkimizda" class="text-silver-200 hover:text-white font-medium py-2 border-b border-white/5 transition-colors" onclick="closeMobileMenu()">Hakkımızda</a>
+        <a href="#galeri"     class="text-silver-200 hover:text-white font-medium py-2 border-b border-white/5 transition-colors" onclick="closeMobileMenu()">Galeri</a>
+        <a href="#iletisim"   class="text-silver-200 hover:text-white font-medium py-2 transition-colors" onclick="closeMobileMenu()">İletişim</a>
+        <a href="#iletisim"
+           class="mt-2 px-6 py-3 rounded-xl text-sm font-semibold text-white text-center"
+           style="background: linear-gradient(135deg, #991b1b, #c20000);">
+          ✦ Teklif Al
+        </a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="anasayfa" class="relative min-h-screen flex items-center overflow-hidden">
+    <!-- BG GRADIENTS -->
+    <div class="blob w-[600px] h-[600px] bg-red-900 top-[-100px] left-[-200px]"></div>
+    <div class="blob w-[400px] h-[400px] bg-red-800 bottom-[0px] right-[-150px]"></div>
+    <!-- GRID BG -->
+    <div class="absolute inset-0" style="background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    <!-- BOTTOM FADE -->
+    <div class="absolute bottom-0 left-0 right-0 h-40" style="background: linear-gradient(to bottom, transparent, #0a0a0a);"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-12 pt-28 pb-16 w-full">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+        <!-- LEFT: TEXT -->
+        <div class="reveal">
+          <!-- BADGE -->
+          <div class="inline-flex items-center gap-2 glass-bordo px-4 py-2 rounded-full text-xs font-semibold text-red-400 tracking-widest uppercase mb-8">
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+            Ankara'nın Lider Matbaa Çözüm Ortağı
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] mb-6 tracking-tight" style="font-family: 'Poppins', sans-serif;">
+            Baskıya Değer Katan<br/>
+            <span class="gradient-text">Simetrik</span><br/>
+            <span class="text-white">Dokunuşlar</span>
+          </h1>
+
+          <p class="text-silver-400 text-lg leading-relaxed mb-10 max-w-lg">
+            Selefon kaplama, serigrafi baskı, bölgesel lak ve ambalaj matbaacılığında kaliteyi ve hassasiyeti bir arada sunuyoruz. Her baskıda marka değerinizi artırıyoruz.
+          </p>
+
+          <!-- BUTTONS -->
+          <div class="flex flex-wrap gap-4">
+            <a href="#iletisim"
+               class="px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 border-glow-hover hover:scale-[1.02]"
+               style="background: linear-gradient(135deg, #991b1b, #c20000); box-shadow: 0 0 30px rgba(153,27,27,0.35);">
+              Hemen Teklif Al
+              <span class="ml-2">→</span>
+            </a>
+            <a href="#hizmetler"
+               class="px-8 py-4 rounded-xl font-semibold text-silver-200 glass transition-all duration-300 hover:text-white hover:border-bordo-700">
+              Hizmetlerimiz
+            </a>
+          </div>
+
+          <!-- MINI STATS -->
+          <div class="flex flex-wrap gap-8 mt-12 pt-8 border-t border-white/[0.07]">
+            <div>
+              <div class="text-2xl font-black text-white" style="font-family:'Poppins',sans-serif;">10+</div>
+              <div class="text-xs text-silver-400 mt-0.5 tracking-wide">Yıllık Deneyim</div>
+            </div>
+            <div>
+              <div class="text-2xl font-black text-white" style="font-family:'Poppins',sans-serif;">500+</div>
+              <div class="text-xs text-silver-400 mt-0.5 tracking-wide">Mutlu Müşteri</div>
+            </div>
+            <div>
+              <div class="text-2xl font-black text-white" style="font-family:'Poppins',sans-serif;">12</div>
+              <div class="text-xs text-silver-400 mt-0.5 tracking-wide">Farklı Uygulama</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: VISUAL -->
+        <div class="reveal flex justify-center lg:justify-end" style="transition-delay: 0.2s;">
+          <div class="relative w-full max-w-[480px]">
+            <!-- FLOATING BIG CARD -->
+            <div class="mockup-card p-8 relative" style="animation: float 6s ease-in-out infinite;">
+              <!-- TOP BAR -->
+              <div class="flex items-center gap-2 mb-6">
+                <div class="w-3 h-3 rounded-full bg-red-500 opacity-80"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500 opacity-80"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500 opacity-80"></div>
+                <div class="ml-auto text-xs text-silver-500 font-mono">simetri.ambalaj</div>
+              </div>
+
+              <!-- VISUAL CONTENT: LUSTER SWATCH GRID -->
+              <div class="grid grid-cols-3 gap-3 mb-6">
+                <div class="rounded-lg h-16 shimmer-bg" style="background: linear-gradient(135deg,#991b1b,#c20000); border: 1px solid rgba(255,255,255,0.1);">
+                  <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">BÖLGESEL LAK</span></div>
+                </div>
+                <div class="rounded-lg h-16" style="background: linear-gradient(135deg,#2a2a2a,#444); border: 1px solid rgba(200,200,200,0.15);">
+                  <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">SELEFON</span></div>
+                </div>
+                <div class="rounded-lg h-16" style="background: linear-gradient(135deg,#1a1a3a,#2a2a6a); border: 1px solid rgba(100,100,255,0.2);">
+                  <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">SERİGRAFİ</span></div>
+                </div>
+                <div class="rounded-lg h-16 col-span-2" style="background: linear-gradient(135deg,#3a2a0a,#8a6a1a); border: 1px solid rgba(200,160,50,0.25);">
+                  <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">YALDIZ BASKI & SICAK BASKI</span></div>
+                </div>
+                <div class="rounded-lg h-16" style="background: linear-gradient(135deg,#0a3a1a,#1a6a3a); border: 1px solid rgba(50,200,100,0.2);">
+                  <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">UV LAK</span></div>
+                </div>
+              </div>
+
+              <!-- QUALITY BADGE -->
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <div class="w-8 h-8 rounded-full icon-bg flex items-center justify-center">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z" fill="#e60000"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs font-semibold text-white">Premium Kalite</div>
+                    <div class="text-[10px] text-silver-500">Ankara & Türkiye Geneli</div>
+                  </div>
+                </div>
+                <div class="glass-bordo px-3 py-1.5 rounded-full">
+                  <span class="text-[11px] text-red-400 font-semibold">✓ Aktif</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- FLOATING MINI CARDS -->
+            <div class="absolute -top-6 -right-4 glass px-4 py-3 rounded-xl border border-white/10 shadow-2xl" style="animation: float 6s ease-in-out infinite; animation-delay: 1s;">
+              <div class="text-xs text-silver-400">Günlük Üretim</div>
+              <div class="text-lg font-black text-white">✦ Yüksek</div>
+            </div>
+            <div class="absolute -bottom-4 -left-4 glass px-4 py-3 rounded-xl border border-red-900/40 shadow-2xl" style="animation: float 6s ease-in-out infinite; animation-delay: 2s;">
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
+                <div class="text-xs font-semibold text-white">Hızlı Teslimat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCROLL INDICATOR -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-40">
+      <div class="text-[10px] tracking-widest text-silver-400 uppercase">Keşfet</div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       HİZMETLERİMİZ
+  ═══════════════════════════════════════════ -->
+  <section id="hizmetler" class="py-28 px-6 lg:px-12 relative">
+    <div class="blob w-[500px] h-[500px] bg-red-900 top-1/2 right-[-150px] opacity-[0.08]"></div>
+
+    <div class="max-w-7xl mx-auto">
+      <!-- SECTION HEADER -->
+      <div class="text-center mb-16 reveal">
+        <div class="inline-flex items-center gap-2 glass-bordo px-4 py-2 rounded-full text-xs font-semibold text-red-400 tracking-widest uppercase mb-6">
+          Uygulama Çeşitlerimiz
+        </div>
+        <h2 class="text-4xl lg:text-5xl font-black mb-4 tracking-tight" style="font-family:'Poppins',sans-serif;">
+          <span class="gradient-text">Tüm Hizmetlerimiz</span>
+        </h2>
+        <p class="text-silver-400 text-lg max-w-xl mx-auto leading-relaxed">
+          Lokal laktan selefona, serigrafiden yaldız baskıya — baskı sonrası tüm iyileştirme teknikleri tek çatı altında.
+        </p>
+      </div>
+
+      <!-- SERVICES GRID -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- KART 1: BÖLGESEL (LOKAL) LAK -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.05s;">
+          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#e60000"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Bölgesel (Lokal) Lak</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            Baskılı materyalin belirli bölgelerine uygulanan parlaklık ve koruma sağlayan lak tekniği. Ürünlerinizde seçici vurgu ve premium görünüm için ideal.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
+        <!-- KART 2: TRAMLI LAK -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.1s;">
+          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 10h18M3 14h18M3 18h18" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/><path d="M7 6v12M12 6v12M17 6v12" stroke="#e60000" stroke-width="1" stroke-linecap="round" opacity="0.5"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Tramlı Lak</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            Belirli bir doku ve pattern oluşturarak baskıya özgün bir yüzey hissi kazandıran lak uygulaması. Görsel derinlik ve dokunsal etki için tercih edilir.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
+        <!-- KART 3: KABARTMA LAK -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.15s;">
+          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M2 17l10-10 10 10" stroke="#991b1b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 21h20" stroke="#e60000" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Kabartma Lak</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            3 boyutlu kabartma efekti yaratan özel lak tekniği. Ambalaj ve kartvizitlerinizde lüks ve dokunsal bir deneyim sunar, marka algısını güçlendirir.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
+        <!-- KART 4: SİMLİ VE KOKULU LAK -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.2s;">
+          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l1 3h3l-2.5 2 1 3L12 8.5 9.5 10l1-3L8 5h3l1-3z" fill="#e60000" opacity="0.8"/><path d="M5 14l0.5 1.5H7l-1.2 1 0.5 1.5L5 17l-1.3 1 .5-1.5-1.2-1H4.5L5 14z" fill="#e60000" opacity="0.5"/><path d="M19 10l0.5 1.5H21l-1.2 1 0.5 1.5L19 13l-1.3 1 .5-1.5-1.2-1H18.5L19 10z" fill="#e60000" opacity="0.5"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Simli & Kokulu Lak</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            Pırıltılı efekt veren simli lak ve aromaterapi hissi sunan kokulu lak seçenekleri. Ürünlerinizi sıradan değil, akılda kalıcı kılmak için.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
+        <!-- KART 5: YALDIZ BASKI & SICAK BASKI -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.25s;">
+          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="8" width="18" height="10" rx="2" stroke="#991b1b" stroke-width="2"/><path d="M8 8V6a4 4 0 018 0v2" stroke="#e60000" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="13" r="2" fill="#e60000"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Yaldız Baskı & Sıcak Baskı</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            Altın, gümüş ve özel renk folyo ile yapılan sıcak baskı uygulamaları. Lüks ambalaj, davetiye ve kurumsal materyaller için vazgeçilmez premium dokunuş.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
+        <!-- KART 6: MAT & PARLAK SELEFON -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.3s;">
+          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="14" rx="3" stroke="#991b1b" stroke-width="2"/><path d="M2 10h20" stroke="#e60000" stroke-width="2"/><path d="M7 14h4" stroke="#888" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Mat & Parlak Selefon Kaplama</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            Baskıların üzerine uygulanan mat veya parlak selefon film kaplama. Uzun ömürlü koruma, estetik yüzey kalitesi ve parmak izi direnci sağlar.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
+        <!-- KART 7: SERİGRAFİ BASKI -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.35s;">
+          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v4H3z" stroke="#991b1b" stroke-width="2" stroke-linejoin="round"/><path d="M6 9v10M18 9v10M12 9v10" stroke="#e60000" stroke-width="1.5" stroke-linecap="round"/><path d="M3 19h18" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Serigrafi Baskı</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            İpek baskı olarak da bilinen serigrafi, kalın mürekkep katmanları ile yoğun renk ve doku elde etmeye olanak tanır. Ambalaj ve tanıtım materyallerinde güçlü etki.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
+        <!-- KART 8: UV LAK -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.4s;">
+          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="4" fill="#e60000" opacity="0.3"/><circle cx="12" cy="12" r="2" fill="#e60000"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">U.V. Lak</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            Ultraviyole ışık ile anında sertleşen UV lak, maksimum parlaklık, çizilme direnci ve renk canlılığı sunar. Hızlı üretim sürecinde yüksek kalite garantisi.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
+        <!-- KART 9: KADİFE SELEFON -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.45s;">
+          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" stroke="#991b1b" stroke-width="2"/><path d="M12 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4" stroke="#e60000" stroke-width="2"/><path d="M2 20c0-3.3 2.7-6 6-6h8c3.3 0 6 2.7 6 6" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Kadife Selefon</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            Yumuşak kadife dokusu veren özel selefon kaplama. Lüks parfüm kutusu, kozmetik ambalaj ve premium kataloglarda eşsiz dokunsal bir deneyim sunar.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       STATS / NEDEN BİZ
+  ═══════════════════════════════════════════ -->
+  <section class="py-20 px-6 lg:px-12 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <div class="glass rounded-3xl p-10 lg:p-14 border border-white/[0.06] relative overflow-hidden">
+        <!-- BG ACCENT -->
+        <div class="absolute top-0 right-0 w-80 h-80 rounded-full opacity-[0.06]" style="background: radial-gradient(circle, #991b1b, transparent); transform: translate(30%, -30%);"></div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+          <div class="reveal">
+            <div class="inline-flex items-center gap-2 glass-bordo px-4 py-2 rounded-full text-xs font-semibold text-red-400 tracking-widest uppercase mb-6">
+              Neden SİMETRİ?
+            </div>
+            <h2 class="text-3xl lg:text-4xl font-black mb-6 leading-tight" style="font-family:'Poppins',sans-serif;">
+              Kalite, Hız ve<br/><span class="gradient-text-bordo">Güvenilirlik</span> Bir Arada
+            </h2>
+            <p class="text-silver-400 leading-relaxed mb-8">
+              Matbaa sektöründe yıllar içinde edindiğimiz bilgi ve deneyimi, son teknoloji ekipmanlarımızla birleştirerek müşterilerimize sadece ürün değil, çözüm sunuyoruz.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0" style="background: rgba(153,27,27,0.2); border: 1px solid rgba(153,27,27,0.4);">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="#e60000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <div class="text-sm font-semibold text-white">Hızlı Üretim Süreçleri</div>
+                  <div class="text-xs text-silver-400 mt-0.5">Sıkı terminleri karşılayan esnek üretim kapasitesi</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0" style="background: rgba(153,27,27,0.2); border: 1px solid rgba(153,27,27,0.4);">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="#e60000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <div class="text-sm font-semibold text-white">Sektör Uzmanlığı</div>
+                  <div class="text-xs text-silver-400 mt-0.5">Baskı sonrası iyileştirme tekniklerinde derin bilgi birikimi</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0" style="background: rgba(153,27,27,0.2); border: 1px solid rgba(153,27,27,0.4);">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="#e60000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <div class="text-sm font-semibold text-white">Kapsamlı Hizmet Yelpazesi</div>
+                  <div class="text-xs text-silver-400 mt-0.5">9+ farklı uygulama ile tek adres kolaylığı</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STATS GRID -->
+          <div class="grid grid-cols-2 gap-4 reveal" style="transition-delay: 0.2s;">
+            <div class="stat-card p-6 rounded-2xl text-center">
+              <div class="text-4xl font-black text-white mb-1" style="font-family:'Poppins',sans-serif;" data-count="10">0</div>
+              <div class="text-xs text-silver-400 tracking-wide uppercase">Yıllık Deneyim</div>
+            </div>
+            <div class="stat-card p-6 rounded-2xl text-center">
+              <div class="text-4xl font-black text-white mb-1" style="font-family:'Poppins',sans-serif;" data-count="500">0</div>
+              <div class="text-xs text-silver-400 tracking-wide uppercase">Mutlu Müşteri</div>
+            </div>
+            <div class="stat-card p-6 rounded-2xl text-center">
+              <div class="text-4xl font-black text-white mb-1" style="font-family:'Poppins',sans-serif;" data-count="9">0</div>
+              <div class="text-xs text-silver-400 tracking-wide uppercase">Uygulama Tekniği</div>
+            </div>
+            <div class="stat-card p-6 rounded-2xl text-center">
+              <div class="text-4xl font-black text-white mb-1" style="font-family:'Poppins',sans-serif;">7/24</div>
+              <div class="text-xs text-silver-400 tracking-wide uppercase">Destek</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       HAKKIMIZDA
+  ═══════════════════════════════════════════ -->
+  <section id="hakkimizda" class="py-28 px-6 lg:px-12 relative overflow-hidden">
+    <div class="blob w-[400px] h-[400px] bg-red-900 bottom-0 left-[-100px] opacity-[0.07]"></div>
+
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- LEFT VISUAL -->
+        <div class="reveal order-2 lg:order-1">
+          <div class="relative">
+            <!-- MAIN CARD -->
+            <div class="glass rounded-3xl p-8 border border-white/[0.07]">
+              <div class="text-xs text-red-400 font-semibold tracking-widest uppercase mb-4">Biz Kimiz</div>
+              <blockquote class="text-silver-200 text-lg leading-relaxed font-light mb-6">
+                "Baskı sonrası iyileştirme, bir ürünü sıradan olmaktan çıkarıp akılda kalıcı kılan o son ve en kritik dokunuştur."
+              </blockquote>
+              <div class="flex items-center gap-3 pt-4 border-t border-white/[0.06]">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background: linear-gradient(135deg, #991b1b, #c20000);">ME</div>
+                <div>
+                  <div class="text-sm font-semibold text-white">Mehmet Can Ekemen</div>
+                  <div class="text-xs text-silver-400">Yetkili — SİMETRİ Matbaacılık</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FLOATING BADGE -->
+            <div class="absolute -top-5 -right-5 glass-bordo p-4 rounded-2xl border border-red-900/40 shadow-xl">
+              <div class="text-2xl font-black text-white" style="font-family:'Poppins',sans-serif;">10+</div>
+              <div class="text-xs text-silver-400">Yıl Deneyim</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT TEXT -->
+        <div class="reveal order-1 lg:order-2" style="transition-delay: 0.2s;">
+          <div class="inline-flex items-center gap-2 glass-bordo px-4 py-2 rounded-full text-xs font-semibold text-red-400 tracking-widest uppercase mb-6">
+            Hakkımızda
+          </div>
+          <h2 class="text-4xl lg:text-5xl font-black mb-6 leading-tight tracking-tight" style="font-family:'Poppins',sans-serif;">
+            Kaliteyi ve<br/>Hassasiyeti<br/><span class="gradient-text">Bir Arada</span> Sunuyoruz
+          </h2>
+          <p class="text-silver-400 leading-relaxed mb-5">
+            SİMETRİ olarak Ankara'da faaliyet gösteren ambalaj matbaacılık firmamız; baskı sonrası iyileştirme tekniklerinde uzmanlaşmış bir çözüm ortağınızdır. Selefon kaplama, serigrafi, bölgesel lak ve yaldız baskı başta olmak üzere geniş uygulama yelpazemizle müşterilerimizin marka değerini artırıyoruz.
+          </p>
+          <p class="text-silver-400 leading-relaxed mb-8">
+            Her projede en yüksek kalite standartlarını koruyarak, hızlı teslimat ve rekabetçi fiyat politikamızla sektörde güvenilir bir isim olmayı başardık. İşimize kattığımız özen ve detay hassasiyeti, müşterilerimizin bize tekrar dönmesinin temel nedenidir.
+          </p>
+
+          <a href="#iletisim"
+             class="inline-flex items-center gap-3 px-7 py-3.5 rounded-xl font-semibold text-white text-sm transition-all duration-300 border-glow-hover hover:scale-[1.02]"
+             style="background: linear-gradient(135deg, #991b1b, #c20000);">
+            Bizimle İletişime Geçin
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       GALERİ
+  ═══════════════════════════════════════════ -->
+  <section id="galeri" class="py-28 px-6 lg:px-12 relative overflow-hidden">
+    <div class="blob w-[500px] h-[500px] bg-red-900 top-1/2 left-[-100px] opacity-[0.07]"></div>
+
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <div class="inline-flex items-center gap-2 glass-bordo px-4 py-2 rounded-full text-xs font-semibold text-red-400 tracking-widest uppercase mb-6">
+          Çalışmalarımız
+        </div>
+        <h2 class="text-4xl lg:text-5xl font-black mb-4 tracking-tight" style="font-family:'Poppins',sans-serif;">
+          <span class="gradient-text">Galeri</span>
+        </h2>
+        <p class="text-silver-400 text-lg max-w-xl mx-auto">
+          Gerçekleştirdiğimiz işlerin bir bölümü — her biri özenle üretilmiş, kalite odaklı.
+        </p>
+      </div>
+
+      <!-- GALLERY GRID -->
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 reveal">
+        <!-- Gallery item 1 -->
+        <div class="gallery-item col-span-1 row-span-1 h-48 lg:h-64" style="background: linear-gradient(135deg, #1a0505, #3a0a0a); border: 1px solid rgba(153,27,27,0.2);">
+          <div class="h-full flex flex-col items-center justify-center gap-3 p-6">
+            <div class="w-16 h-16 icon-bg rounded-2xl flex items-center justify-center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#e60000"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <span class="text-xs font-semibold text-silver-300 text-center tracking-wide">BÖLGESEL LAK</span>
+          </div>
+          <span class="gallery-label">Bölgesel Lak Örneği</span>
+        </div>
+        <!-- Gallery item 2 -->
+        <div class="gallery-item col-span-1 h-48 lg:h-64" style="background: linear-gradient(135deg, #0a1a0a, #1a3a1a); border: 1px solid rgba(50,150,50,0.15);">
+          <div class="h-full flex flex-col items-center justify-center gap-3 p-6">
+            <div class="w-16 h-16 rounded-2xl flex items-center justify-center" style="background: rgba(50,150,50,0.1); border: 1px solid rgba(50,150,50,0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="14" rx="3" stroke="#22c55e" stroke-width="2"/><path d="M2 10h20" stroke="#22c55e" stroke-width="2"/></svg>
+            </div>
+            <span class="text-xs font-semibold text-silver-300 text-center tracking-wide">MAT SELEFON</span>
+          </div>
+          <span class="gallery-label">Mat Selefon Kaplama</span>
+        </div>
+        <!-- Gallery item 3 -->
+        <div class="gallery-item col-span-2 lg:col-span-1 h-48 lg:h-64" style="background: linear-gradient(135deg, #1a1a0a, #3a3a0a); border: 1px solid rgba(200,160,50,0.15);">
+          <div class="h-full flex flex-col items-center justify-center gap-3 p-6">
+            <div class="w-16 h-16 rounded-2xl flex items-center justify-center" style="background: rgba(200,160,50,0.1); border: 1px solid rgba(200,160,50,0.25);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2l1 3h3l-2.5 2 1 3L12 8.5 9.5 10l1-3L8 5h3l1-3z" fill="#f59e0b"/></svg>
+            </div>
+            <span class="text-xs font-semibold text-silver-300 text-center tracking-wide">YALDIZ BASKI</span>
+          </div>
+          <span class="gallery-label">Yaldız & Sıcak Baskı</span>
+        </div>
+        <!-- Gallery item 4 -->
+        <div class="gallery-item col-span-1 h-48 lg:h-64" style="background: linear-gradient(135deg, #0a0a1a, #1a1a3a); border: 1px solid rgba(100,100,255,0.15);">
+          <div class="h-full flex flex-col items-center justify-center gap-3 p-6">
+            <div class="w-16 h-16 rounded-2xl flex items-center justify-center" style="background: rgba(100,100,255,0.1); border: 1px solid rgba(100,100,255,0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v4H3z" stroke="#818cf8" stroke-width="2"/><path d="M6 9v10M18 9v10M12 9v10" stroke="#818cf8" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <span class="text-xs font-semibold text-silver-300 text-center tracking-wide">SERİGRAFİ</span>
+          </div>
+          <span class="gallery-label">Serigrafi Baskı</span>
+        </div>
+        <!-- Gallery item 5 -->
+        <div class="gallery-item col-span-2 h-48 lg:h-64" style="background: linear-gradient(135deg, #1a050a, #3a0a1a); border: 1px solid rgba(153,27,27,0.2);">
+          <div class="h-full flex flex-col items-center justify-center gap-3 p-6">
+            <div class="w-16 h-16 icon-bg rounded-2xl flex items-center justify-center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M2 17l10-10 10 10" stroke="#e60000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 21h20" stroke="#e60000" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <span class="text-xs font-semibold text-silver-300 text-center tracking-wide">KABARTMA LAK & KADİFE SELEFON</span>
+          </div>
+          <span class="gallery-label">Kabartma Lak & Kadife Selefon</span>
+        </div>
+      </div>
+
+      <p class="text-center text-silver-500 text-sm mt-8 reveal">
+        Daha fazla örnek çalışma için <a href="#iletisim" class="text-red-400 hover:text-red-300 font-medium transition-colors">bizimle iletişime geçin</a>.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       İLETİŞİM
+  ═══════════════════════════════════════════ -->
+  <section id="iletisim" class="py-28 px-6 lg:px-12 relative overflow-hidden">
+    <div class="blob w-[600px] h-[600px] bg-red-900 top-0 right-[-200px] opacity-[0.08]"></div>
+    <div class="blob w-[400px] h-[400px] bg-red-950 bottom-0 left-[-100px] opacity-[0.07]"></div>
+
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <div class="inline-flex items-center gap-2 glass-bordo px-4 py-2 rounded-full text-xs font-semibold text-red-400 tracking-widest uppercase mb-6">
+          Teklif & İletişim
+        </div>
+        <h2 class="text-4xl lg:text-5xl font-black mb-4 tracking-tight" style="font-family:'Poppins',sans-serif;">
+          <span class="gradient-text">Hemen İletişime</span> Geçin
+        </h2>
+        <p class="text-silver-400 text-lg max-w-xl mx-auto">
+          Projenizi bizimle paylaşın, en hızlı ve en uygun çözümü sunalım.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-10">
+
+        <!-- LEFT: CONTACT INFO -->
+        <div class="reveal space-y-6">
+          <div class="glass rounded-2xl p-8 border border-white/[0.07]">
+            <h3 class="text-lg font-bold text-white mb-6" style="font-family:'Poppins',sans-serif;">Kurumsal Bilgiler</h3>
+
+            <!-- YETKİLİ -->
+            <div class="flex items-start gap-4 mb-6 pb-6 border-b border-white/[0.06]">
+              <div class="w-10 h-10 icon-bg rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" stroke="#e60000" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7" r="4" stroke="#e60000" stroke-width="2"/></svg>
+              </div>
+              <div>
+                <div class="text-xs text-silver-500 uppercase tracking-widest mb-1">Yetkili</div>
+                <div class="text-white font-semibold">Mehmet Can Ekemen</div>
+              </div>
+            </div>
+
+            <!-- TELEFON -->
+            <div class="flex items-start gap-4 mb-6 pb-6 border-b border-white/[0.06]">
+              <div class="w-10 h-10 icon-bg rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#e60000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <div class="text-xs text-silver-500 uppercase tracking-widest mb-1">Telefon</div>
+                <a href="tel:+905530559597" class="text-white font-semibold hover:text-red-400 transition-colors">+90 553 055 95 97</a>
+              </div>
+            </div>
+
+            <!-- E-POSTA -->
+            <div class="flex items-start gap-4 mb-6 pb-6 border-b border-white/[0.06]">
+              <div class="w-10 h-10 icon-bg rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#e60000" stroke-width="2"/><polyline points="22,6 12,13 2,6" stroke="#e60000" stroke-width="2"/></svg>
+              </div>
+              <div>
+                <div class="text-xs text-silver-500 uppercase tracking-widest mb-1">E-Posta</div>
+                <a href="mailto:mehmetcanekemen0@gmail.com" class="text-white font-semibold hover:text-red-400 transition-colors break-all">mehmetcanekemen0@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- ADRES -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 icon-bg rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" stroke="#e60000" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="#e60000" stroke-width="2"/></svg>
+              </div>
+              <div>
+                <div class="text-xs text-silver-500 uppercase tracking-widest mb-1">Adres</div>
+                <div class="text-white font-medium leading-relaxed text-sm">
+                  Zübeyde Hanım Mahallesi,<br/>
+                  Kazım Karabekir Caddesi,<br/>
+                  Kültür İş Hanı No: 7/2<br/>
+                  <span class="text-red-400">Altındağ / ANKARA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUICK CONTACT CARD -->
+          <div class="glass-bordo rounded-2xl p-6 border border-red-900/30">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
+              <span class="text-sm font-semibold text-white">Hızlı Ulaşım</span>
+            </div>
+            <p class="text-silver-400 text-sm mb-4">Aramayı tercih ediyorsanız, hemen bizi arayabilirsiniz. Sorularınızı anında yanıtlayalım.</p>
+            <a href="tel:+905530559597"
+               class="flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-white text-sm transition-all duration-300 hover:scale-[1.01]"
+               style="background: linear-gradient(135deg, #991b1b, #c20000);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="white" stroke-width="2"/></svg>
+              Şimdi Ara: +90 553 055 95 97
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <div class="reveal" style="transition-delay: 0.2s;">
+          <div class="glass rounded-2xl p-8 border border-white/[0.07]">
+            <h3 class="text-lg font-bold text-white mb-6" style="font-family:'Poppins',sans-serif;">Teklif / Mesaj Gönder</h3>
+
+            <form id="contact-form" class="space-y-5" onsubmit="handleFormSubmit(event)">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="text-xs text-silver-400 uppercase tracking-widest mb-2 block">Ad Soyad</label>
+                  <input id="form-name" type="text" placeholder="Adınız Soyadınız" required
+                         class="form-input w-full px-4 py-3 rounded-xl text-sm" />
+                </div>
+                <div>
+                  <label class="text-xs text-silver-400 uppercase tracking-widest mb-2 block">Telefon</label>
+                  <input id="form-phone" type="tel" placeholder="05XX XXX XX XX"
+                         class="form-input w-full px-4 py-3 rounded-xl text-sm" />
+                </div>
+              </div>
+
+              <div>
+                <label class="text-xs text-silver-400 uppercase tracking-widest mb-2 block">E-Posta</label>
+                <input id="form-email" type="email" placeholder="ornek@firma.com" required
+                       class="form-input w-full px-4 py-3 rounded-xl text-sm" />
+              </div>
+
+              <div>
+                <label class="text-xs text-silver-400 uppercase tracking-widest mb-2 block">İlgilendiğiniz Hizmet</label>
+                <select id="form-service" class="form-input w-full px-4 py-3 rounded-xl text-sm" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: #e8e8e8; outline: none; cursor:pointer;">
+                  <option value="" style="background:#111; color:#e8e8e8;">Seçiniz...</option>
+                  <option value="bolgesel-lak" style="background:#111; color:#e8e8e8;">Bölgesel (Lokal) Lak</option>
+                  <option value="tramli-lak" style="background:#111; color:#e8e8e8;">Tramlı Lak</option>
+                  <option value="kabartma-lak" style="background:#111; color:#e8e8e8;">Kabartma Lak</option>
+                  <option value="simli-kokulu" style="background:#111; color:#e8e8e8;">Simli & Kokulu Lak</option>
+                  <option value="yaldiz" style="background:#111; color:#e8e8e8;">Yaldız Baskı & Sıcak Baskı</option>
+                  <option value="selefon" style="background:#111; color:#e8e8e8;">Mat & Parlak Selefon Kaplama</option>
+                  <option value="serigrafi" style="background:#111; color:#e8e8e8;">Serigrafi Baskı</option>
+                  <option value="uv-lak" style="background:#111; color:#e8e8e8;">U.V. Lak</option>
+                  <option value="kadife-selefon" style="background:#111; color:#e8e8e8;">Kadife Selefon</option>
+                  <option value="diger" style="background:#111; color:#e8e8e8;">Diğer / Genel Bilgi</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="text-xs text-silver-400 uppercase tracking-widest mb-2 block">Mesajınız</label>
+                <textarea id="form-message" rows="5" placeholder="Projeniz hakkında kısaca bilgi verin..." required
+                          class="form-input w-full px-4 py-3 rounded-xl text-sm resize-none"></textarea>
+              </div>
+
+              <button type="submit" id="submit-btn"
+                      class="w-full py-4 rounded-xl font-semibold text-white text-sm transition-all duration-300 hover:scale-[1.01] border-glow-hover"
+                      style="background: linear-gradient(135deg, #991b1b, #c20000); box-shadow: 0 0 20px rgba(153,27,27,0.3);">
+                <span id="btn-text">Teklif İste & Gönder →</span>
+                <span id="btn-loading" class="hidden">Gönderiliyor...</span>
+              </button>
+
+              <!-- SUCCESS MESSAGE -->
+              <div id="form-success" class="hidden glass-bordo rounded-xl p-4 text-center">
+                <div class="text-green-400 font-semibold mb-1">✓ Mesajınız İletildi!</div>
+                <div class="text-sm text-silver-400">En kısa sürede size dönüş yapacağız.</div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="relative border-t border-white/[0.06] overflow-hidden">
+    <div class="absolute inset-0" style="background: linear-gradient(to bottom, #0a0a0a, #050505);"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-12 py-14">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+        <!-- BRAND -->
+        <div class="lg:col-span-2">
+          <div class="flex items-start mb-4">
+            <img src="logo.png" alt="SİMETRİ Logo" class="h-16 w-auto object-contain" style="filter: drop-shadow(0 2px 10px rgba(153,27,27,0.35));" />
+          </div>
+          <p class="text-silver-400 text-sm leading-relaxed max-w-xs">
+            Selefon, serigrafi, bölgesel lak ve ambalaj matbaacılığında Ankara'nın güvenilir çözüm ortağı.
+          </p>
+          <div class="flex items-center gap-3 mt-5">
+            <a href="tel:+905530559597" class="text-sm text-red-400 hover:text-red-300 font-medium transition-colors">+90 553 055 95 97</a>
+            <span class="text-silver-600">·</span>
+            <a href="mailto:mehmetcanekemen0@gmail.com" class="text-sm text-red-400 hover:text-red-300 font-medium transition-colors">E-Posta</a>
+          </div>
+        </div>
+
+        <!-- HİZMETLER -->
+        <div>
+          <h4 class="text-xs font-semibold text-silver-300 uppercase tracking-widest mb-4">Hizmetlerimiz</h4>
+          <ul class="space-y-2.5 text-sm text-silver-500">
+            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Bölgesel Lak</a></li>
+            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Tramlı Lak</a></li>
+            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Kabartma Lak</a></li>
+            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Selefon Kaplama</a></li>
+            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Serigrafi Baskı</a></li>
+            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Yaldız & Sıcak Baskı</a></li>
+          </ul>
+        </div>
+
+        <!-- ADRES & İLETİŞİM -->
+        <div>
+          <h4 class="text-xs font-semibold text-silver-300 uppercase tracking-widest mb-4">Adres</h4>
+          <address class="not-italic text-sm text-silver-500 leading-relaxed">
+            Zübeyde Hanım Mahallesi,<br/>
+            Kazım Karabekir Caddesi,<br/>
+            Kültür İş Hanı No: 7/2<br/>
+            Altındağ / ANKARA
+          </address>
+          <div class="mt-4 space-y-2">
+            <a href="tel:+905530559597" class="block text-sm text-silver-500 hover:text-red-400 transition-colors">📞 +90 553 055 95 97</a>
+            <a href="mailto:mehmetcanekemen0@gmail.com" class="block text-sm text-silver-500 hover:text-red-400 transition-colors">✉ mehmetcanekemen0@gmail.com</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM BAR -->
+      <div class="pt-8 border-t border-white/[0.05] flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-silver-600">
+          © 2025 SİMETRİ Ambalaj Matbaacılık — Tüm hakları saklıdır.
+        </p>
+        <div class="flex items-center gap-1">
+          <span class="text-xs text-silver-600">Yetkili:</span>
+          <span class="text-xs text-silver-400 font-medium">Mehmet Can Ekemen</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════
+       JAVASCRIPT
+  ═══════════════════════════════════════════ -->
+  <script>
+    // ── HEADER SCROLL ──────────────────────────
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        header.classList.add('header-scrolled');
+      } else {
+        header.classList.remove('header-scrolled');
+      }
+    });
+
+    // ── MOBILE MENU ────────────────────────────
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu   = document.getElementById('mobile-menu');
+    const ham1 = document.getElementById('ham-1');
+    const ham2 = document.getElementById('ham-2');
+    const ham3 = document.getElementById('ham-3');
+    let menuOpen = false;
+
+    hamburgerBtn.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      if (menuOpen) {
+        mobileMenu.classList.remove('hidden');
+        ham1.style.transform = 'rotate(45deg) translate(5px, 5px)';
+        ham2.style.opacity = '0';
+        ham3.style.transform = 'rotate(-45deg) translate(5px, -5px)';
+        ham3.style.width = '24px';
+      } else {
+        closeMobileMenu();
+      }
+    });
+
+    function closeMobileMenu() {
+      menuOpen = false;
+      mobileMenu.classList.add('hidden');
+      ham1.style.transform = '';
+      ham2.style.opacity = '1';
+      ham3.style.transform = '';
+      ham3.style.width = '16px';
+    }
+
+    // ── SCROLL REVEAL ──────────────────────────
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ── COUNTER ANIMATION ──────────────────────
+    function animateCounter(el, target) {
+      let start = 0;
+      const duration = 1800;
+      const startTime = performance.now();
+      function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(eased * target) + (target >= 100 ? '+' : (target >= 10 ? '+' : '+'));
+        if (progress < 1) requestAnimationFrame(update);
+        else el.textContent = target + '+';
+      }
+      requestAnimationFrame(update);
+    }
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.dataset.counted) {
+          entry.target.dataset.counted = true;
+          const target = parseInt(entry.target.dataset.count);
+          animateCounter(entry.target, target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+    // ── FORM SUBMIT ────────────────────────────
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const btn     = document.getElementById('submit-btn');
+      const btnText = document.getElementById('btn-text');
+      const btnLoad = document.getElementById('btn-loading');
+      const success = document.getElementById('form-success');
+
+      btn.disabled = true;
+      btnText.classList.add('hidden');
+      btnLoad.classList.remove('hidden');
+
+      setTimeout(() => {
+        btn.disabled = false;
+        btnText.classList.remove('hidden');
+        btnLoad.classList.add('hidden');
+        success.classList.remove('hidden');
+        document.getElementById('contact-form').reset();
+        setTimeout(() => success.classList.add('hidden'), 5000);
+      }, 1500);
+    }
+
+    // ── SMOOTH ACTIVE NAV ──────────────────────
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 120;
+        if (window.scrollY >= top) current = sec.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.style.color = link.getAttribute('href') === '#' + current ? '#ffffff' : '';
+      });
+    });
+  </script>
+
+</body>
+</html>
