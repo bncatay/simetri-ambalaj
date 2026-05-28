@@ -7,7 +7,7 @@
   <meta name="description" content="SİMETRİ; bölgesel lak, selefon kaplama, serigrafi baskı ve ambalaj matbaacılığında Ankara'nın güvenilir çözüm ortağı. Kaliteyi ve hassasiyeti bir arada sunuyoruz." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@500;600;700;800;900&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@500;600;700;800;900&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700;800;900&family=Montserrat:wght@800;900&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -342,7 +342,7 @@
         </svg>
         <!-- Text -->
         <div class="flex flex-col leading-none">
-          <span style="font-family:'Big Shoulders Display',sans-serif; font-size:2.4rem; font-weight:900; line-height:1; letter-spacing:0.22em; background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 30%, #cc0000 70%, #8a0000 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">
+          <span style="font-family:'Montserrat',sans-serif; font-size:1.75rem; font-weight:900; line-height:1; letter-spacing:0.18em; background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 30%, #cc0000 70%, #8a0000 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">
             SİMETRİ
           </span>
           <span class="text-silver-400 tracking-[0.12em] uppercase group-hover:text-silver-300 transition-colors" 
@@ -400,6 +400,8 @@
        HERO
   ═══════════════════════════════════════════ -->
   <section id="anasayfa" class="relative min-h-screen flex items-center overflow-hidden">
+    <!-- SHOP SIGN BG (Subtle Red Glow from behind) -->
+    <div class="absolute inset-0 z-0 opacity-[0.09] mix-blend-screen pointer-events-none" style="background: url('tabela_yakin.png') center/cover no-repeat;"></div>
     <!-- BG GRADIENTS -->
     <div class="blob w-[600px] h-[600px] bg-red-900 top-[-100px] left-[-200px]"></div>
     <div class="blob w-[400px] h-[400px] bg-red-800 bottom-[0px] right-[-150px]"></div>
@@ -478,17 +480,17 @@
                 <div class="rounded-lg h-16 shimmer-bg" style="background: linear-gradient(135deg,#991b1b,#c20000); border: 1px solid rgba(255,255,255,0.1);">
                   <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">BÖLGESEL LAK</span></div>
                 </div>
-                <div class="rounded-lg h-16" style="background: linear-gradient(135deg,#2a2a2a,#444); border: 1px solid rgba(200,200,200,0.15);">
-                  <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">SELEFON</span></div>
+                <div class="rounded-lg h-16" style="background: linear-gradient(135deg,#2e2e2e,#111); border: 1px solid rgba(255,255,255,0.08);">
+                  <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">KUMLU LAK</span></div>
                 </div>
                 <div class="rounded-lg h-16" style="background: linear-gradient(135deg,#1a1a3a,#2a2a6a); border: 1px solid rgba(100,100,255,0.2);">
                   <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">SERİGRAFİ</span></div>
                 </div>
-                <div class="rounded-lg h-16 col-span-2" style="background: linear-gradient(135deg,#3a2a0a,#8a6a1a); border: 1px solid rgba(200,160,50,0.25);">
-                  <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">YALDIZ BASKI & SICAK BASKI</span></div>
+                <div class="rounded-lg h-16 col-span-2" style="background: linear-gradient(135deg,#3a0a1a,#5a0a2a); border: 1px solid rgba(153,27,27,0.25);">
+                  <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">KABARTMA LAK</span></div>
                 </div>
-                <div class="rounded-lg h-16" style="background: linear-gradient(135deg,#0a3a1a,#1a6a3a); border: 1px solid rgba(50,200,100,0.2);">
-                  <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">UV LAK</span></div>
+                <div class="rounded-lg h-16" style="background: linear-gradient(135deg,#2a0a1a,#4a1a2a); border: 1px solid rgba(153,27,27,0.2);">
+                  <div class="h-full flex items-end p-2"><span class="text-[9px] text-white/70 font-semibold">SİMLİ LAK</span></div>
                 </div>
               </div>
 
@@ -550,133 +552,77 @@
           <span class="gradient-text">Tüm Hizmetlerimiz</span>
         </h2>
         <p class="text-silver-400 text-lg max-w-xl mx-auto leading-relaxed">
-          Lokal laktan selefona, serigrafiden yaldız baskıya — baskı sonrası tüm iyileştirme teknikleri tek çatı altında.
+          Serigrafiden kabartma laka, bölgesel laktan kumlu ve simli laka kadar aradığınız tüm baskı sonrası uygulamalar.
         </p>
       </div>
 
       <!-- SERVICES GRID -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
 
-        <!-- KART 1: BÖLGESEL (LOKAL) LAK -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.05s;">
-          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#e60000"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Bölgesel (Lokal) Lak</h3>
-          <p class="text-silver-400 text-sm leading-relaxed">
-            Baskılı materyalin belirli bölgelerine uygulanan parlaklık ve koruma sağlayan lak tekniği. Ürünlerinizde seçici vurgu ve premium görünüm için ideal.
-          </p>
-          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
-            <span>Detay →</span>
-          </div>
-        </div>
-
-        <!-- KART 2: TRAMLI LAK -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.1s;">
-          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 10h18M3 14h18M3 18h18" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/><path d="M7 6v12M12 6v12M17 6v12" stroke="#e60000" stroke-width="1" stroke-linecap="round" opacity="0.5"/></svg>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Tramlı Lak</h3>
-          <p class="text-silver-400 text-sm leading-relaxed">
-            Belirli bir doku ve pattern oluşturarak baskıya özgün bir yüzey hissi kazandıran lak uygulaması. Görsel derinlik ve dokunsal etki için tercih edilir.
-          </p>
-          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
-            <span>Detay →</span>
-          </div>
-        </div>
-
-        <!-- KART 3: KABARTMA LAK -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.15s;">
-          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M2 17l10-10 10 10" stroke="#991b1b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 21h20" stroke="#e60000" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Kabartma Lak</h3>
-          <p class="text-silver-400 text-sm leading-relaxed">
-            3 boyutlu kabartma efekti yaratan özel lak tekniği. Ambalaj ve kartvizitlerinizde lüks ve dokunsal bir deneyim sunar, marka algısını güçlendirir.
-          </p>
-          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
-            <span>Detay →</span>
-          </div>
-        </div>
-
-        <!-- KART 4: SİMLİ VE KOKULU LAK -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.2s;">
-          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l1 3h3l-2.5 2 1 3L12 8.5 9.5 10l1-3L8 5h3l1-3z" fill="#e60000" opacity="0.8"/><path d="M5 14l0.5 1.5H7l-1.2 1 0.5 1.5L5 17l-1.3 1 .5-1.5-1.2-1H4.5L5 14z" fill="#e60000" opacity="0.5"/><path d="M19 10l0.5 1.5H21l-1.2 1 0.5 1.5L19 13l-1.3 1 .5-1.5-1.2-1H18.5L19 10z" fill="#e60000" opacity="0.5"/></svg>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Simli & Kokulu Lak</h3>
-          <p class="text-silver-400 text-sm leading-relaxed">
-            Pırıltılı efekt veren simli lak ve aromaterapi hissi sunan kokulu lak seçenekleri. Ürünlerinizi sıradan değil, akılda kalıcı kılmak için.
-          </p>
-          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
-            <span>Detay →</span>
-          </div>
-        </div>
-
-        <!-- KART 5: YALDIZ BASKI & SICAK BASKI -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.25s;">
-          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="8" width="18" height="10" rx="2" stroke="#991b1b" stroke-width="2"/><path d="M8 8V6a4 4 0 018 0v2" stroke="#e60000" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="13" r="2" fill="#e60000"/></svg>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Yaldız Baskı & Sıcak Baskı</h3>
-          <p class="text-silver-400 text-sm leading-relaxed">
-            Altın, gümüş ve özel renk folyo ile yapılan sıcak baskı uygulamaları. Lüks ambalaj, davetiye ve kurumsal materyaller için vazgeçilmez premium dokunuş.
-          </p>
-          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
-            <span>Detay →</span>
-          </div>
-        </div>
-
-        <!-- KART 6: MAT & PARLAK SELEFON -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.3s;">
-          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="14" rx="3" stroke="#991b1b" stroke-width="2"/><path d="M2 10h20" stroke="#e60000" stroke-width="2"/><path d="M7 14h4" stroke="#888" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Mat & Parlak Selefon Kaplama</h3>
-          <p class="text-silver-400 text-sm leading-relaxed">
-            Baskıların üzerine uygulanan mat veya parlak selefon film kaplama. Uzun ömürlü koruma, estetik yüzey kalitesi ve parmak izi direnci sağlar.
-          </p>
-          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
-            <span>Detay →</span>
-          </div>
-        </div>
-
-        <!-- KART 7: SERİGRAFİ BASKI -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.35s;">
+        <!-- KART 1: SERİGRAFİ BASKI -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal sm:col-span-1 lg:col-span-2 cursor-pointer" onclick="openServiceModal('serigrafi')" style="transition-delay: 0.05s;">
           <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v4H3z" stroke="#991b1b" stroke-width="2" stroke-linejoin="round"/><path d="M6 9v10M18 9v10M12 9v10" stroke="#e60000" stroke-width="1.5" stroke-linecap="round"/><path d="M3 19h18" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
           <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Serigrafi Baskı</h3>
           <p class="text-silver-400 text-sm leading-relaxed">
-            İpek baskı olarak da bilinen serigrafi, kalın mürekkep katmanları ile yoğun renk ve doku elde etmeye olanak tanır. Ambalaj ve tanıtım materyallerinde güçlü etki.
+            İpek baskı olarak da bilinen serigrafi, kalın mürekkep katmanları ile yoğun renk ve benzersiz doku kalitesi sunar. Ambalaj ve özel tanıtım projelerinizde yüksek etki sağlar.
           </p>
           <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
             <span>Detay →</span>
           </div>
         </div>
 
-        <!-- KART 8: UV LAK -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.4s;">
+        <!-- KART 2: KABARTMA LAK -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal sm:col-span-1 lg:col-span-2 cursor-pointer" onclick="openServiceModal('kabartma')" style="transition-delay: 0.1s;">
           <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="4" fill="#e60000" opacity="0.3"/><circle cx="12" cy="12" r="2" fill="#e60000"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M2 17l10-10 10 10" stroke="#991b1b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 21h20" stroke="#e60000" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">U.V. Lak</h3>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Kabartma Lak</h3>
           <p class="text-silver-400 text-sm leading-relaxed">
-            Ultraviyole ışık ile anında sertleşen UV lak, maksimum parlaklık, çizilme direnci ve renk canlılığı sunar. Hızlı üretim sürecinde yüksek kalite garantisi.
+            Seçili alanlarda 3 boyutlu yükseklik kazandıran lüks lak uygulaması. Kartvizit, katalog kapakları ve premium ambalajlarda göz alıcı dokunsal bir fark yaratır.
           </p>
           <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
             <span>Detay →</span>
           </div>
         </div>
 
-        <!-- KART 9: KADİFE SELEFON -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal" style="transition-delay: 0.45s;">
+        <!-- KART 3: BÖLGESEL LAK -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal sm:col-span-2 lg:col-span-2 cursor-pointer" onclick="openServiceModal('bolgesel')" style="transition-delay: 0.15s;">
           <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" stroke="#991b1b" stroke-width="2"/><path d="M12 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4" stroke="#e60000" stroke-width="2"/><path d="M2 20c0-3.3 2.7-6 6-6h8c3.3 0 6 2.7 6 6" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#e60000"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Kadife Selefon</h3>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Bölgesel Lak</h3>
           <p class="text-silver-400 text-sm leading-relaxed">
-            Yumuşak kadife dokusu veren özel selefon kaplama. Lüks parfüm kutusu, kozmetik ambalaj ve premium kataloglarda eşsiz dokunsal bir deneyim sunar.
+            Baskının yalnızca belirli bölümlerine uygulanarak parlatılan, kontrast ve estetik derinlik kazandıran mat/parlak kontrastı oluşturan premium teknik.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
+        <!-- KART 4: KUMLU LAK -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal sm:col-span-1 lg:col-span-3 cursor-pointer" onclick="openServiceModal('kumlu')" style="transition-delay: 0.2s;">
+          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 10h18M3 14h18M3 18h18" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/><path d="M7 6v12M12 6v12M17 6v12" stroke="#e60000" stroke-width="1" stroke-linecap="round" opacity="0.5"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Kumlu Lak</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            Yüzeyde ince kum tanecikleri hissi uyandıran pürüzlü ve mat bir doku yaratan özel lak uygulaması. Görsel zenginliğin yanı sıra benzersiz dokunsal derinlik sunar.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
+        <!-- KART 5: SİMLİ LAK -->
+        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal sm:col-span-1 lg:col-span-3 cursor-pointer" onclick="openServiceModal('simli')" style="transition-delay: 0.25s;">
+          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l1 3h3l-2.5 2 1 3L12 8.5 9.5 10l1-3L8 5h3l1-3z" fill="#e60000" opacity="0.8"/><path d="M5 14l0.5 1.5H7l-1.2 1 0.5 1.5L5 17l-1.3 1 .5-1.5-1.2-1H4.5L5 14z" fill="#e60000" opacity="0.5"/><path d="M19 10l0.5 1.5H21l-1.2 1 0.5 1.5L19 13l-1.3 1 .5-1.5-1.2-1H18.5L19 10z" fill="#e60000" opacity="0.5"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Simli Lak</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            Işıkta parıldayan sim pigmentleri içeren lak kaplaması. Ürünlerinizde estetik pırıltılar yaratarak dikkat çekici ve oldukça şık tasarımlar elde etmenizi sağlar.
           </p>
           <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
             <span>Detay →</span>
@@ -847,58 +793,54 @@
       </div>
 
       <!-- GALLERY GRID -->
-      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 reveal">
-        <!-- Gallery item 1 -->
-        <div class="gallery-item col-span-1 row-span-1 h-48 lg:h-64" style="background: linear-gradient(135deg, #1a0505, #3a0a0a); border: 1px solid rgba(153,27,27,0.2);">
-          <div class="h-full flex flex-col items-center justify-center gap-3 p-6">
-            <div class="w-16 h-16 icon-bg rounded-2xl flex items-center justify-center">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#e60000"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
-            <span class="text-xs font-semibold text-silver-300 text-center tracking-wide">BÖLGESEL LAK</span>
+      <div class="flex flex-wrap justify-center gap-6 reveal">
+        <!-- Gallery item 1: Bölgesel Lak -->
+        <div class="gallery-item w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm h-48 lg:h-64 relative group overflow-hidden cursor-pointer" onclick="openLightbox('Bölgesel Lak Çalışması', 'bolgesel')" style="background: linear-gradient(to top, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.3) 50%, rgba(10,10,10,0.1) 100%), url('bolgesel_lak_1.png') center/cover no-repeat; border: 1px solid rgba(153,27,27,0.25);">
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-red-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <!-- Text Content (Bottom Aligned) -->
+          <div class="absolute bottom-0 left-0 right-0 p-5 text-left z-10">
+            <h4 class="text-base font-bold text-white tracking-wide">Bölgesel Lak</h4>
           </div>
-          <span class="gallery-label">Bölgesel Lak Örneği</span>
         </div>
-        <!-- Gallery item 2 -->
-        <div class="gallery-item col-span-1 h-48 lg:h-64" style="background: linear-gradient(135deg, #0a1a0a, #1a3a1a); border: 1px solid rgba(50,150,50,0.15);">
-          <div class="h-full flex flex-col items-center justify-center gap-3 p-6">
-            <div class="w-16 h-16 rounded-2xl flex items-center justify-center" style="background: rgba(50,150,50,0.1); border: 1px solid rgba(50,150,50,0.2);">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="14" rx="3" stroke="#22c55e" stroke-width="2"/><path d="M2 10h20" stroke="#22c55e" stroke-width="2"/></svg>
-            </div>
-            <span class="text-xs font-semibold text-silver-300 text-center tracking-wide">MAT SELEFON</span>
+        <!-- Gallery item 2: Kabartma Lak -->
+        <div class="gallery-item w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm h-48 lg:h-64 relative group overflow-hidden cursor-pointer" onclick="openLightbox('Kabartma Lak Çalışması', 'kabartma')" style="background: linear-gradient(to top, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.3) 50%, rgba(10,10,10,0.1) 100%), url('kabartma_lak_1.png') center/cover no-repeat; border: 1px solid rgba(153,27,27,0.25);">
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-red-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <!-- Text Content (Bottom Aligned) -->
+          <div class="absolute bottom-0 left-0 right-0 p-5 text-left z-10">
+            <h4 class="text-base font-bold text-white tracking-wide">Kabartma Lak</h4>
           </div>
-          <span class="gallery-label">Mat Selefon Kaplama</span>
         </div>
-        <!-- Gallery item 3 -->
-        <div class="gallery-item col-span-2 lg:col-span-1 h-48 lg:h-64" style="background: linear-gradient(135deg, #1a1a0a, #3a3a0a); border: 1px solid rgba(200,160,50,0.15);">
-          <div class="h-full flex flex-col items-center justify-center gap-3 p-6">
-            <div class="w-16 h-16 rounded-2xl flex items-center justify-center" style="background: rgba(200,160,50,0.1); border: 1px solid rgba(200,160,50,0.25);">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2l1 3h3l-2.5 2 1 3L12 8.5 9.5 10l1-3L8 5h3l1-3z" fill="#f59e0b"/></svg>
-            </div>
-            <span class="text-xs font-semibold text-silver-300 text-center tracking-wide">YALDIZ BASKI</span>
+        <!-- Gallery item 3: Serigrafi Baskı -->
+        <div class="gallery-item w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm h-48 lg:h-64 relative group overflow-hidden cursor-pointer" onclick="openLightbox('Serigrafi Baskı Çalışması', 'serigrafi')" style="background: linear-gradient(to top, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.3) 50%, rgba(10,10,10,0.1) 100%), url('serigrafi_baski_1.png') center/cover no-repeat; border: 1px solid rgba(153,27,27,0.25);">
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-red-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <!-- Text Content (Bottom Aligned) -->
+          <div class="absolute bottom-0 left-0 right-0 p-5 text-left z-10">
+            <h4 class="text-base font-bold text-white tracking-wide">Serigrafi Baskı</h4>
           </div>
-          <span class="gallery-label">Yaldız & Sıcak Baskı</span>
         </div>
-        <!-- Gallery item 4 -->
-        <div class="gallery-item col-span-1 h-48 lg:h-64" style="background: linear-gradient(135deg, #0a0a1a, #1a1a3a); border: 1px solid rgba(100,100,255,0.15);">
-          <div class="h-full flex flex-col items-center justify-center gap-3 p-6">
-            <div class="w-16 h-16 rounded-2xl flex items-center justify-center" style="background: rgba(100,100,255,0.1); border: 1px solid rgba(100,100,255,0.2);">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v4H3z" stroke="#818cf8" stroke-width="2"/><path d="M6 9v10M18 9v10M12 9v10" stroke="#818cf8" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <span class="text-xs font-semibold text-silver-300 text-center tracking-wide">SERİGRAFİ</span>
+        <!-- Gallery item 4: Kumlu Lak -->
+        <div class="gallery-item w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm h-48 lg:h-64 relative group overflow-hidden cursor-pointer" onclick="openLightbox('Kumlu Lak Çalışması', 'kumlu')" style="background: linear-gradient(to top, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.3) 50%, rgba(10,10,10,0.1) 100%), url('kumlu_lak_1.png') center/cover no-repeat; border: 1px solid rgba(153,27,27,0.25);">
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-red-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <!-- Text Content (Bottom Aligned) -->
+          <div class="absolute bottom-0 left-0 right-0 p-5 text-left z-10">
+            <h4 class="text-base font-bold text-white tracking-wide">Kumlu Lak</h4>
           </div>
-          <span class="gallery-label">Serigrafi Baskı</span>
         </div>
-        <!-- Gallery item 5 -->
-        <div class="gallery-item col-span-2 h-48 lg:h-64" style="background: linear-gradient(135deg, #1a050a, #3a0a1a); border: 1px solid rgba(153,27,27,0.2);">
-          <div class="h-full flex flex-col items-center justify-center gap-3 p-6">
-            <div class="w-16 h-16 icon-bg rounded-2xl flex items-center justify-center">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M2 17l10-10 10 10" stroke="#e60000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 21h20" stroke="#e60000" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
-            <span class="text-xs font-semibold text-silver-300 text-center tracking-wide">KABARTMA LAK & KADİFE SELEFON</span>
+        <!-- Gallery item 5: Simli Lak -->
+        <div class="gallery-item w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm h-48 lg:h-64 relative group overflow-hidden cursor-pointer" onclick="openLightbox('Simli Lak Çalışması', 'simli')" style="background: linear-gradient(to top, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.3) 50%, rgba(10,10,10,0.1) 100%), url('simli_lak_1.png') center/cover no-repeat; border: 1px solid rgba(153,27,27,0.25);">
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-red-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <!-- Text Content (Bottom Aligned) -->
+          <div class="absolute bottom-0 left-0 right-0 p-5 text-left z-10">
+            <h4 class="text-base font-bold text-white tracking-wide">Simli Lak</h4>
           </div>
-          <span class="gallery-label">Kabartma Lak & Kadife Selefon</span>
         </div>
       </div>
+    </div>
 
       <p class="text-center text-silver-500 text-sm mt-8 reveal">
         Daha fazla örnek çalışma için <a href="#iletisim" class="text-red-400 hover:text-red-300 font-medium transition-colors">bizimle iletişime geçin</a>.
@@ -1019,26 +961,16 @@
                 </div>
               </div>
 
-              <div>
-                <label class="text-xs text-silver-400 uppercase tracking-widest mb-2 block">E-Posta</label>
-                <input id="form-email" type="email" placeholder="ornek@firma.com" required
-                       class="form-input w-full px-4 py-3 rounded-xl text-sm" />
-              </div>
 
               <div>
                 <label class="text-xs text-silver-400 uppercase tracking-widest mb-2 block">İlgilendiğiniz Hizmet</label>
                 <select id="form-service" class="form-input w-full px-4 py-3 rounded-xl text-sm" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: #e8e8e8; outline: none; cursor:pointer;">
                   <option value="" style="background:#111; color:#e8e8e8;">Seçiniz...</option>
-                  <option value="bolgesel-lak" style="background:#111; color:#e8e8e8;">Bölgesel (Lokal) Lak</option>
-                  <option value="tramli-lak" style="background:#111; color:#e8e8e8;">Tramlı Lak</option>
-                  <option value="kabartma-lak" style="background:#111; color:#e8e8e8;">Kabartma Lak</option>
-                  <option value="simli-kokulu" style="background:#111; color:#e8e8e8;">Simli & Kokulu Lak</option>
-                  <option value="yaldiz" style="background:#111; color:#e8e8e8;">Yaldız Baskı & Sıcak Baskı</option>
-                  <option value="selefon" style="background:#111; color:#e8e8e8;">Mat & Parlak Selefon Kaplama</option>
                   <option value="serigrafi" style="background:#111; color:#e8e8e8;">Serigrafi Baskı</option>
-                  <option value="uv-lak" style="background:#111; color:#e8e8e8;">U.V. Lak</option>
-                  <option value="kadife-selefon" style="background:#111; color:#e8e8e8;">Kadife Selefon</option>
-                  <option value="diger" style="background:#111; color:#e8e8e8;">Diğer / Genel Bilgi</option>
+                  <option value="kabartma-lak" style="background:#111; color:#e8e8e8;">Kabartma Lak</option>
+                  <option value="bolgesel-lak" style="background:#111; color:#e8e8e8;">Bölgesel Lak</option>
+                  <option value="kumlu-lak" style="background:#111; color:#e8e8e8;">Kumlu Lak</option>
+                  <option value="simli-lak" style="background:#111; color:#e8e8e8;">Simli Lak</option>
                 </select>
               </div>
 
@@ -1097,12 +1029,11 @@
         <div>
           <h4 class="text-xs font-semibold text-silver-300 uppercase tracking-widest mb-4">Hizmetlerimiz</h4>
           <ul class="space-y-2.5 text-sm text-silver-500">
-            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Bölgesel Lak</a></li>
-            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Tramlı Lak</a></li>
-            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Kabartma Lak</a></li>
-            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Selefon Kaplama</a></li>
             <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Serigrafi Baskı</a></li>
-            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Yaldız & Sıcak Baskı</a></li>
+            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Kabartma Lak</a></li>
+            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Bölgesel Lak</a></li>
+            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Kumlu Lak</a></li>
+            <li><a href="#hizmetler" class="hover:text-red-400 transition-colors">Simli Lak</a></li>
           </ul>
         </div>
 
@@ -1136,6 +1067,87 @@
     </div>
   </footer>
 
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4">
+    <!-- Close Button -->
+    <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white hover:text-red-500 text-4xl transition-colors z-50" aria-label="Kapat">&times;</button>
+    
+    <!-- Modal Container -->
+    <div class="max-w-4xl w-full flex flex-col items-center">
+      <!-- Title -->
+      <h3 id="modal-title" class="text-xl font-bold text-white mb-6 tracking-wide"></h3>
+      
+      <!-- Image Display -->
+      <div class="relative w-full max-h-[60vh] flex items-center justify-center rounded-xl overflow-hidden glass border border-white/10 p-2">
+        <img id="modal-img" src="" alt="Önizleme" class="max-w-full max-h-[58vh] object-contain rounded-lg" />
+      </div>
+      
+      <!-- Subtitle -->
+      <p class="text-silver-400 text-xs mt-6 text-center tracking-wide uppercase">Uygulama Örnekleri ve Detaylı Açıları:</p>
+
+      <!-- Dynamic Thumbnails Container -->
+      <div id="modal-thumb-container" class="mt-4 flex justify-center gap-4 overflow-x-auto py-2 max-w-full">
+        <!-- Will be populated dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICE DETAIL MODAL -->
+  <div id="service-modal" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4">
+    <!-- Close Button -->
+    <button onclick="closeServiceModal()" class="absolute top-6 right-6 text-white hover:text-red-500 text-4xl transition-colors z-50" aria-label="Kapat">&times;</button>
+    
+    <!-- Modal Container -->
+    <div class="max-w-2xl w-full glass rounded-3xl p-8 border border-white/10 relative overflow-hidden">
+      <!-- BG Glow -->
+      <div class="absolute -top-20 -right-20 w-60 h-60 rounded-full opacity-10 bg-red-900 blur-3xl pointer-events-none"></div>
+
+      <!-- Icon & Title -->
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-14 h-14 icon-bg rounded-2xl flex items-center justify-center text-red-500" id="service-modal-icon">
+          <!-- Will be set dynamically -->
+        </div>
+        <div>
+          <span class="text-xs text-red-500 font-semibold uppercase tracking-widest">Hizmet Detayı</span>
+          <h3 id="service-modal-title" class="text-2xl font-black text-white tracking-tight" style="font-family:'Poppins',sans-serif;"></h3>
+        </div>
+      </div>
+      
+      <!-- Content Sections -->
+      <div class="space-y-6 text-sm text-silver-300 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+        <!-- 1. Ne Demek (Definition) -->
+        <div>
+          <h4 class="text-white font-bold mb-2 flex items-center gap-2">
+            <span class="w-1.5 h-3 bg-red-500 rounded-full"></span> Nedir / Ne Demek?
+          </h4>
+          <p id="service-modal-def" class="leading-relaxed text-silver-400"></p>
+        </div>
+
+        <!-- 2. Ne İşe Yarar (Benefits) -->
+        <div>
+          <h4 class="text-white font-bold mb-2 flex items-center gap-2">
+            <span class="w-1.5 h-3 bg-red-500 rounded-full"></span> Ne İşe Yarar / Faydaları?
+          </h4>
+          <p id="service-modal-benefits" class="leading-relaxed text-silver-400"></p>
+        </div>
+
+        <!-- 3. Nasıl Yapılır (Process) -->
+        <div>
+          <h4 class="text-white font-bold mb-2 flex items-center gap-2">
+            <span class="w-1.5 h-3 bg-red-500 rounded-full"></span> Nasıl Yapılır / Aşamaları?
+          </h4>
+          <div id="service-modal-process" class="leading-relaxed text-silver-400 space-y-1"></div>
+        </div>
+      </div>
+
+      <!-- Action Button -->
+      <div class="mt-8 pt-4 border-t border-white/5 flex justify-end">
+        <a href="#iletisim" onclick="closeServiceModal()" class="px-6 py-2.5 rounded-xl text-sm font-semibold text-white tracking-wide transition-all duration-300" style="background: linear-gradient(135deg, #991b1b, #c20000);">
+          ✦ Bu Hizmet İçin Teklif Al
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- ═══════════════════════════════════════════
        JAVASCRIPT
@@ -1229,6 +1241,14 @@
       const btnLoad = document.getElementById('btn-loading');
       const success = document.getElementById('form-success');
 
+      // Get values
+      const name = document.getElementById('form-name').value;
+      const phone = document.getElementById('form-phone').value;
+      const email = document.getElementById('form-email').value;
+      const serviceSelect = document.getElementById('form-service');
+      const serviceText = serviceSelect.options[serviceSelect.selectedIndex].text;
+      const message = document.getElementById('form-message').value;
+
       btn.disabled = true;
       btnText.classList.add('hidden');
       btnLoad.classList.remove('hidden');
@@ -1238,9 +1258,25 @@
         btnText.classList.remove('hidden');
         btnLoad.classList.add('hidden');
         success.classList.remove('hidden');
+
+        // Construct WhatsApp message template
+        const waNumber = "905530559597";
+        const textMessage = `*SİMETRİ Web Sitesi - Yeni Teklif Talebi*\n\n` +
+                            `*Ad Soyad:* ${name}\n` +
+                            `*Telefon:* ${phone}\n` +
+                            `*Hizmet:* ${serviceText}\n` +
+                            `*Mesaj:* ${message}`;
+
+        // Encode URI
+        const encodedText = encodeURIComponent(textMessage);
+        const waUrl = `https://wa.me/${waNumber}?text=${encodedText}`;
+
+        // Redirect to WhatsApp
+        window.open(waUrl, '_blank');
+
         document.getElementById('contact-form').reset();
         setTimeout(() => success.classList.add('hidden'), 5000);
-      }, 1500);
+      }, 1000);
     }
 
     // ── SMOOTH ACTIVE NAV ──────────────────────
@@ -1256,6 +1292,171 @@
         link.style.color = link.getAttribute('href') === '#' + current ? '#ffffff' : '';
       });
     });
+
+    // ── LIGHTBOX MODAL & GALLERY IMAGES ────────
+    const serviceImages = {
+      bolgesel: [
+        'bolgesel_lak_1.png',
+        'bolgesel_lak_2.png',
+        'bolgesel_lak_3.png',
+        'bolgesel_lak_4.png',
+        'bolgesel_lak_5.png'
+      ],
+      kabartma: [
+        'kabartma_lak_1.png',
+        'kabartma_lak_2.png',
+        'kabartma_lak_3.png',
+        'kabartma_lak_4.png',
+        'kabartma_lak_5.png'
+      ],
+      serigrafi: [
+        'serigrafi_baski_1.png',
+        'serigrafi_baski_2.png',
+        'serigrafi_baski_3.png',
+        'serigrafi_baski_4.png',
+        'serigrafi_baski_5.png'
+      ],
+      kumlu: [
+        'kumlu_lak_1.png',
+        'kumlu_lak_2.png',
+        'kumlu_lak_3.png',
+        'kumlu_lak_4.png',
+        'kumlu_lak_5.png'
+      ],
+      simli: [
+        'simli_lak_1.png',
+        'simli_lak_2.png',
+        'simli_lak_3.png',
+        'simli_lak_4.png',
+        'simli_lak_5.png'
+      ]
+    };
+
+    function openLightbox(title, serviceKey) {
+      const lightboxModal  = document.getElementById('lightbox-modal');
+      const modalTitle     = document.getElementById('modal-title');
+      const modalImg       = document.getElementById('modal-img');
+      const thumbContainer = document.getElementById('modal-thumb-container');
+
+      modalTitle.textContent = title;
+      const images = serviceImages[serviceKey] || [];
+      
+      // Set initial big image to the first one
+      if (images.length > 0) {
+        modalImg.src = images[0];
+      }
+
+      // Generate thumbnails dynamically
+      thumbContainer.innerHTML = '';
+      images.forEach((imgUrl, index) => {
+        const thumbDiv = document.createElement('div');
+        thumbDiv.className = "w-16 h-16 rounded-lg border-2 border-white/10 hover:border-red-500 cursor-pointer overflow-hidden p-0.5 flex items-center justify-center bg-black/40 transition-all duration-300";
+        if (index === 0) {
+          thumbDiv.classList.add('border-red-500');
+        }
+        
+        // Add click handler to select thumbnail and change active border
+        thumbDiv.onclick = () => {
+          changeModalImage(imgUrl);
+          // Highlight selected thumb
+          const thumbs = thumbContainer.querySelectorAll('div');
+          thumbs.forEach(t => {
+            t.classList.remove('border-red-500');
+            t.classList.add('border-white/10');
+          });
+          thumbDiv.classList.remove('border-white/10');
+          thumbDiv.classList.add('border-red-500');
+        };
+        
+        const img = document.createElement('img');
+        img.src = imgUrl;
+        img.alt = `${title} Açı ${index + 1}`;
+        img.className = "w-full h-full object-cover rounded";
+        
+        thumbDiv.appendChild(img);
+        thumbContainer.appendChild(thumbDiv);
+      });
+
+      lightboxModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const lightboxModal = document.getElementById('lightbox-modal');
+      lightboxModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function changeModalImage(imgPath) {
+      const modalImg = document.getElementById('modal-img');
+      modalImg.src = imgPath;
+    }
+
+    // ── SERVICE DETAIL MODAL FUNCTIONS ─────────
+    const serviceDetails = {
+      serigrafi: {
+        title: "Serigrafi Baskı",
+        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v4H3z" stroke="#e60000" stroke-width="2" stroke-linejoin="round"/><path d="M6 9v10M18 9v10M12 9v10" stroke="#e60000" stroke-width="1.5" stroke-linecap="round"/><path d="M3 19h18" stroke="#e60000" stroke-width="2" stroke-linecap="round"/></svg>`,
+        definition: "Serigrafi (ipek baskı), ahşap veya metal bir çerçeveye gerilen ipek, polyester veya metal dokulu elek gözlerinin kimyasal yöntemlerle kapatılarak, basılacak alanların açık bırakılması esasına dayanan bir baskı tekniğidir. Mürekkep, sıyırıcı yardımıyla açık gözeneklerden baskı yapılacak yüzeye aktarılır.",
+        benefits: "Diğer baskı yöntemleriyle ulaşılamayan kalınlıkta ve yoğunlukta mürekkep katmanı bırakabildiği için renk doygunluğu çok yüksektir. Dış etkenlere, neme ve UV ışığına karşı son derece dayanıklıdır. Kağıt, karton, plastik, ahşap, metal ve cam gibi neredeyse tüm yüzeylere uygulanabilir.",
+        process: "1. Tasarım hazırlanır ve ipek kalıba film yardımıyla pozlama yapılır.<br>2. Pozlanan kalıp yıkanarak basılacak kısımların gözenekleri açılır.<br>3. Kalıp baskı makinesine yerleştirilir ve mürekkep eklenir.<br>4. Sıyırıcı (ragle) yardımıyla mürekkep ipek üzerinden geçirilerek ürüne aktarılır.<br>5. Fırınlama veya UV kurutma tünelinde kurutularak sabitlenir."
+      },
+      kabartma: {
+        title: "Kabartma Lak",
+        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M2 17l10-10 10 10" stroke="#e60000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 21h20" stroke="#e60000" stroke-width="2" stroke-linecap="round"/></svg>`,
+        definition: "Kabartma Lak (kabartma kısmi lak), kağıt veya karton yüzeyinde belirli alanlara (logo, başlık veya desen) özel bir UV lak uygulanarak, ısıl ve kimyasal işlemlerle lakın kabarmasını sağlayan ve yüzeyde 3 boyutlu kalın bir katman oluşturan lak tekniğidir.",
+        benefits: "Katalog kapaklarında, premium kartvizitlerde ve lüks ambalajlarda ürüne dokunulduğunda doğrudan hissedilen üç boyutlu, zengin bir doku (tactile sensation) ve görsel derinlik kazandırır. Markanızın algısını anında üst seviyeye taşır.",
+        process: "1. Basılan ürünlerin yüzeyine mat selefon kaplanır (lakın kontrast oluşturması için).<br>2. Serigrafi makinesinde özel, kalın kabartma lak jeli sadece belirlenen grafik alanlara uygulanır.<br>3. Yüksek güçlü UV kurutucu tünelden geçirilerek saniyeler içinde dondurulur ve lakın kabaran formu sabitlenir."
+      },
+      bolgesel: {
+        title: "Bölgesel Lak",
+        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#e60000"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" stroke="#e60000" stroke-width="2" stroke-linecap="round"/></svg>`,
+        definition: "Bölgesel Lak (kısmi lak / spot UV), basılı materyallerin yalnızca belirli bölgelerine (örneğin sadece logoya veya görselin bir kısmına) uygulanan parlak lak kaplama tekniğidir. Mat zemin üzerindeki bu parlak detaylar, dikkat çekici bir tezat yaratır.",
+        benefits: "Mat selefon kaplı arka planda parlak vurgular oluşturarak tasarıma derinlik ve kontrast katar. Logonun veya önemli bir bilginin göz alıcı şekilde parlamasını sağlayarak görselliği güçlendirir.",
+        process: "1. Ürün basıldıktan sonra yüzeyi mat selefon ile lamine edilir.<br>2. Sadece parlak görünmesi istenen alanlar için özel bir klişe veya kalıp hazırlanır.<br>3. UV lak bu kalıp vasıtasıyla bölgesel olarak transfer edilir.<br>4. UV kurutma tünelinden geçirilerek anında kurutulur."
+      },
+      kumlu: {
+        title: "Kumlu Lak",
+        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 10h18M3 14h18M3 18h18" stroke="#e60000" stroke-width="2" stroke-linecap="round"/><path d="M7 6v12M12 6v12M17 6v12" stroke="#e60000" stroke-width="1" stroke-linecap="round" opacity="0.5"/></svg>`,
+        definition: "Kumlu Lak (pürüzlü lak / texture UV), yüzeyde ince kum tanecikleri veya portakal kabuğu dokusu hissi uyandıran pürüzlü, mat ve koruyucu bir lak katmanıdır. Serigrafi lak grubunda yer alır.",
+        benefits: "Tasarıma olağanüstü bir dokunsal zenginlik katar. Dokunulduğunda pürüzlü, kaymaz ve tok bir his bırakır. Aynı zamanda ışık yansımalarını kırarak mat ve premium bir görüntü sunar ve çizilmelere karşı ekstra koruma sağlar.",
+        process: "1. Kumlu efekt pigmentleri içeren özel formüllü UV lak hazırlanır.<br>2. Serigrafi kalıbı yardımıyla ürünün tümüne veya bölgesel olarak belirlenen alanlarına basılır.<br>3. Ultraviyole ışık altında kurutularak kumlu pürüzlü yapısı katılaştırılır."
+      },
+      simli: {
+        title: "Simli Lak",
+        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2l1 3h3l-2.5 2 1 3L12 8.5 9.5 10l1-3L8 5h3l1-3z" fill="#e60000" opacity="0.8"/><path d="M5 14l0.5 1.5H7l-1.2 1 0.5 1.5L5 17l-1.3 1 .5-1.5-1.2-1H4.5L5 14z" fill="#e60000" opacity="0.5"/><path d="M19 10l0.5 1.5H21l-1.2 1 0.5 1.5L19 13l-1.3 1 .5-1.5-1.2-1H18.5L19 10z" fill="#e60000" opacity="0.5"/></svg>`,
+        definition: "Simli Lak (Glitter UV), lak solüsyonunun içerisine mikron boyutunda metalize parlak sim pigmentleri (altın, gümüş veya hologram renklerde) karıştırılarak uygulanan özel ve ışıltılı bir kaplama türüdür.",
+        benefits: "Özellikle kutlama kartlarında, çocuk kitabı kapaklarında, kozmetik ve lüks tüketim ambalajlarında ışığa göre renk değiştiren parıltılı ve dikkat çekici bir estetik zenginlik sağlar.",
+        process: "1. Sim pigmentleri şeffaf serigrafi lakı ile homojen şekilde karıştırılır.<br>2. Karışım serigrafi baskı makinesiyle belirlenen alanlara kalın bir tabaka halinde uygulanır.<br>3. UV kurutma fırınından geçirilerek simlerin kağıda kalıcı olarak kilitlenmesi sağlanır."
+      }
+    };
+
+    function openServiceModal(key) {
+      const modal = document.getElementById('service-modal');
+      const title = document.getElementById('service-modal-title');
+      const icon  = document.getElementById('service-modal-icon');
+      const def   = document.getElementById('service-modal-def');
+      const benefits = document.getElementById('service-modal-benefits');
+      const process  = document.getElementById('service-modal-process');
+
+      const data = serviceDetails[key];
+      if (!data) return;
+
+      title.textContent = data.title;
+      icon.innerHTML = data.icon;
+      def.innerHTML = data.definition;
+      benefits.innerHTML = data.benefits;
+      process.innerHTML = data.process;
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeServiceModal() {
+      const modal = document.getElementById('service-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
   </script>
 
 </body>
