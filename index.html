@@ -1614,39 +1614,56 @@
       display: flex;
       flex-direction: column;
     }
+
+    /* chat-box: başlangıçta gizli */
+    #chat-box {
+      position: fixed;
+      z-index: 51;
+      background: #0f0f0f;
+      border: 1px solid rgba(153,27,27,0.3);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* toggle: her zaman fixed */
+    #chat-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 52;
+    }
   </style>
 
-  <div id="chat-widget">
+  <!-- CHAT KUTUSU (bağımsız fixed) -->
+  <div id="chat-box" class="chat-hidden flex flex-col" style="background:#0f0f0f; border:1px solid rgba(153,27,27,0.3);">
 
-    <!-- CHAT PENCERESİ -->
-    <div id="chat-box" class="chat-hidden overflow-hidden flex flex-col" style="background:#0f0f0f; border:1px solid rgba(153,27,27,0.3);">
-
-      <!-- BAŞLIK -->
-      <div class="flex items-center gap-3 px-4 py-3 flex-shrink-0" style="background: linear-gradient(135deg, #7a0c0c, #c20000);">
-        <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-black text-white text-sm flex-shrink-0" style="font-family:'Montserrat',sans-serif;">S</div>
-        <div class="flex-1">
-          <div class="text-white font-bold text-sm" style="font-family:'Poppins',sans-serif;">SİMETRİ Asistan</div>
-          <div class="text-red-200 text-xs flex items-center gap-1">
-            <span class="w-1.5 h-1.5 rounded-full bg-green-400 inline-block animate-pulse"></span> Çevrimiçi
-          </div>
+    <!-- BAŞLIK -->
+    <div class="flex items-center gap-3 px-4 py-3 flex-shrink-0" style="background: linear-gradient(135deg, #7a0c0c, #c20000);">
+      <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-black text-white text-sm flex-shrink-0" style="font-family:'Montserrat',sans-serif;">S</div>
+      <div class="flex-1">
+        <div class="text-white font-bold text-sm" style="font-family:'Poppins',sans-serif;">SİMETRİ Asistan</div>
+        <div class="text-red-200 text-xs flex items-center gap-1">
+          <span class="w-1.5 h-1.5 rounded-full bg-green-400 inline-block animate-pulse"></span> Çevrimiçi
         </div>
-        <button id="chat-close" class="text-white/60 hover:text-white text-2xl leading-none transition-colors w-8 h-8 flex items-center justify-center">&times;</button>
       </div>
-
-      <!-- MESAJLAR -->
-      <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-3"></div>
-
-      <!-- HIZLI BUTONLAR -->
-      <div id="chat-quick-btns"></div>
-
+      <button id="chat-close" class="text-white/60 hover:text-white text-2xl leading-none transition-colors w-10 h-10 flex items-center justify-center">&times;</button>
     </div>
 
-    <!-- AÇMA BALONU -->
-    <button id="chat-toggle" class="w-14 h-14 rounded-full text-white text-2xl shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110" style="background: linear-gradient(135deg, #991b1b, #c20000); flex-shrink:0;">
-      💬
-    </button>
+    <!-- MESAJLAR -->
+    <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-3"></div>
+
+    <!-- HIZLI BUTONLAR -->
+    <div id="chat-quick-btns"></div>
 
   </div>
+
+  <!-- AÇMA BALONU (bağımsız fixed) -->
+  <button id="chat-toggle"
+    class="w-14 h-14 rounded-full text-white text-2xl shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+    style="background: linear-gradient(135deg, #991b1b, #c20000);">
+    💬
+  </button>
 
   <script>
     // ── CHATBOT LOGIC ───────────────────────────
@@ -1658,6 +1675,28 @@
 
     let chatOpen = false;
     let greeted  = false;
+
+    // ── LAYOUT: Mobil vs Desktop ──────────────────
+    function applyLayout() {
+      const mob = window.innerWidth < 640;
+      if (mob) {
+        // MOBİL: tüm ekran genişliği, alttan açılır
+        Object.assign(chatBox.style, {
+          left: '0', right: '0', bottom: '0', top: 'auto',
+          width: '100%', maxHeight: '78vh',
+          borderRadius: '20px 20px 0 0'
+        });
+      } else {
+        // MASAÜSTÜ: 340px, toggle'ın üstünde
+        Object.assign(chatBox.style, {
+          left: 'auto', right: '20px', bottom: '90px', top: 'auto',
+          width: '340px', maxHeight: '500px',
+          borderRadius: '20px'
+        });
+      }
+    }
+    applyLayout();
+    window.addEventListener('resize', applyLayout);
 
     // Soru-Cevap veri tabanı
     const chatData = {
