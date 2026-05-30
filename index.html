@@ -356,14 +356,12 @@
   <!-- ═══════════════════════════════════════════
        HEADER / NAV
   ═══════════════════════════════════════════ -->
-  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4 px-6 lg:px-12">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-3 px-4 lg:py-4 lg:px-12" style="overflow-x: hidden;">
+    <div class="w-full max-w-7xl mx-auto flex items-center justify-between px-2 sm:px-4">
 
-      <!-- LOGO -->
-      <!-- LOGO -->
-      <a href="#anasayfa" class="flex items-center gap-3 group select-none">
+      <a href="#anasayfa" class="flex items-center gap-2 group select-none min-w-0 flex-shrink">
         <!-- Diamond Icon -->
-        <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+        <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 transition-transform duration-300 group-hover:scale-105 lg:w-12 lg:h-12">
           <!-- Top triangle: bordo -->
           <polygon points="50,5 95,50 50,50" fill="url(#grad_bordo)"/>
           <!-- Left triangle: silver -->
@@ -395,12 +393,12 @@
           </defs>
         </svg>
         <!-- Text -->
-        <div class="flex flex-col leading-none">
-          <span style="font-family:'Montserrat',sans-serif; font-size:1.75rem; font-weight:900; line-height:1; letter-spacing:0.18em; background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 30%, #cc0000 70%, #8a0000 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">
+        <div class="flex flex-col leading-none min-w-0 overflow-hidden">
+          <span style="font-family:'Montserrat',sans-serif; font-size:clamp(1.1rem,4vw,1.75rem); font-weight:900; line-height:1; letter-spacing:0.18em; background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 30%, #cc0000 70%, #8a0000 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; white-space:nowrap;">
             SİMETRİ
           </span>
-          <span class="text-silver-400 tracking-[0.12em] uppercase group-hover:text-silver-300 transition-colors" 
-                style="font-size:0.52rem; margin-top:3px; letter-spacing:0.15em;">
+          <span class="text-silver-400 tracking-[0.08em] uppercase group-hover:text-silver-300 transition-colors hidden sm:block"
+                style="font-size:0.5rem; margin-top:3px; white-space:nowrap;">
             Selefon · Serigrafi · Bölgesel Lak · Ambalaj
           </span>
         </div>
@@ -611,10 +609,10 @@
       </div>
 
       <!-- SERVICES GRID -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 lg:gap-6">
 
         <!-- KART 1: SERİGRAFİ BASKI -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal sm:col-span-1 lg:col-span-2 cursor-pointer" onclick="openServiceModal('serigrafi')" style="transition-delay: 0.05s;">
+        <div class="service-card glass rounded-2xl p-5 border border-white/[0.07] reveal col-span-1 sm:col-span-1 lg:col-span-2 cursor-pointer" onclick="openServiceModal('serigrafi')" style="transition-delay: 0.05s;">
           <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v4H3z" stroke="#991b1b" stroke-width="2" stroke-linejoin="round"/><path d="M6 9v10M18 9v10M12 9v10" stroke="#e60000" stroke-width="1.5" stroke-linecap="round"/><path d="M3 19h18" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
@@ -628,7 +626,7 @@
         </div>
 
         <!-- KART 2: KABARTMA LAK -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal sm:col-span-1 lg:col-span-2 cursor-pointer" onclick="openServiceModal('kabartma')" style="transition-delay: 0.1s;">
+        <div class="service-card glass rounded-2xl p-5 border border-white/[0.07] reveal col-span-1 sm:col-span-1 lg:col-span-2 cursor-pointer" onclick="openServiceModal('kabartma')" style="transition-delay: 0.1s;">
           <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M2 17l10-10 10 10" stroke="#991b1b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 21h20" stroke="#e60000" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
@@ -642,7 +640,7 @@
         </div>
 
         <!-- KART 3: BÖLGESEL LAK -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal sm:col-span-2 lg:col-span-2 cursor-pointer" onclick="openServiceModal('bolgesel')" style="transition-delay: 0.15s;">
+        <div class="service-card glass rounded-2xl p-5 border border-white/[0.07] reveal col-span-1 sm:col-span-2 lg:col-span-2 cursor-pointer" onclick="openServiceModal('bolgesel')" style="transition-delay: 0.15s;">
           <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#e60000"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
@@ -656,7 +654,7 @@
         </div>
 
         <!-- KART 4: KUMLU LAK -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal sm:col-span-1 lg:col-span-3 cursor-pointer" onclick="openServiceModal('kumlu')" style="transition-delay: 0.2s;">
+        <div class="service-card glass rounded-2xl p-5 border border-white/[0.07] reveal col-span-1 sm:col-span-1 lg:col-span-3 cursor-pointer" onclick="openServiceModal('kumlu')" style="transition-delay: 0.2s;">
           <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 10h18M3 14h18M3 18h18" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/><path d="M7 6v12M12 6v12M17 6v12" stroke="#e60000" stroke-width="1" stroke-linecap="round" opacity="0.5"/></svg>
           </div>
@@ -670,7 +668,7 @@
         </div>
 
         <!-- KART 5: SİMLİ LAK -->
-        <div class="service-card glass rounded-2xl p-6 border border-white/[0.07] reveal sm:col-span-1 lg:col-span-3 cursor-pointer" onclick="openServiceModal('simli')" style="transition-delay: 0.25s;">
+        <div class="service-card glass rounded-2xl p-5 border border-white/[0.07] reveal col-span-1 sm:col-span-1 lg:col-span-3 cursor-pointer" onclick="openServiceModal('simli')" style="transition-delay: 0.25s;">
           <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l1 3h3l-2.5 2 1 3L12 8.5 9.5 10l1-3L8 5h3l1-3z" fill="#e60000" opacity="0.8"/><path d="M5 14l0.5 1.5H7l-1.2 1 0.5 1.5L5 17l-1.3 1 .5-1.5-1.2-1H4.5L5 14z" fill="#e60000" opacity="0.5"/><path d="M19 10l0.5 1.5H21l-1.2 1 0.5 1.5L19 13l-1.3 1 .5-1.5-1.2-1H18.5L19 10z" fill="#e60000" opacity="0.5"/></svg>
           </div>
@@ -1800,52 +1798,23 @@
       }, 300);
     }
 
-    // ── LAYOUT: JS ile mobil/desktop konumlandırma ────────────
-    const chatWidget = document.getElementById('chat-widget');
-
+    // ── LAYOUT: mobil / desktop ──────────────────
     function applyLayout() {
-      const isMobile = window.innerWidth < 640;
-      if (isMobile) {
-        // MOBİL: Altından tam genişlikte açılır
-        chatWidget.style.bottom  = '0';
-        chatWidget.style.left    = '0';
-        chatWidget.style.right   = '0';
-        chatWidget.style.top     = 'auto';
-        chatWidget.style.alignItems = 'stretch';
-        chatWidget.style.gap     = '0';
-
-        chatBox.style.width         = '100%';
-        chatBox.style.maxHeight     = '78vh';
-        chatBox.style.borderRadius  = '20px 20px 0 0';
-
-        chatToggle.style.position = 'fixed';
-        chatToggle.style.bottom   = '20px';
-        chatToggle.style.right    = '20px';
-        chatToggle.style.left     = 'auto';
-        chatToggle.style.zIndex   = '60';
-        chatToggle.style.margin   = '0';
+      const mob = window.innerWidth < 640;
+      if (mob) {
+        Object.assign(chatBox.style, {
+          left:'0', right:'0', bottom:'0', top:'auto',
+          width:'100%', maxHeight:'78vh',
+          borderRadius:'20px 20px 0 0'
+        });
       } else {
-        // MASAÜSTÜ: Sağ alt köşe
-        chatWidget.style.bottom  = '24px';
-        chatWidget.style.right   = '24px';
-        chatWidget.style.left    = 'auto';
-        chatWidget.style.top     = 'auto';
-        chatWidget.style.alignItems = 'flex-end';
-        chatWidget.style.gap     = '12px';
-
-        chatBox.style.width         = '340px';
-        chatBox.style.maxHeight     = '500px';
-        chatBox.style.borderRadius  = '20px';
-
-        chatToggle.style.position = 'static';
-        chatToggle.style.bottom   = 'auto';
-        chatToggle.style.right    = 'auto';
-        chatToggle.style.left     = 'auto';
-        chatToggle.style.zIndex   = 'auto';
-        chatToggle.style.margin   = '0';
+        Object.assign(chatBox.style, {
+          left:'auto', right:'20px', bottom:'90px', top:'auto',
+          width:'340px', maxHeight:'500px',
+          borderRadius:'20px'
+        });
       }
     }
-
     applyLayout();
     window.addEventListener('resize', applyLayout);
 
