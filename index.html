@@ -48,7 +48,7 @@
       "longitude": "32.8654"
     },
     "openingHours": "Mo-Sa 08:00-18:00",
-    "sameAs": ["https://maps.app.goo.gl/YaMWewLssMPktfhB8"],
+    "sameAs": ["https://maps.app.goo.gl/9DCHykgsP2JgydRb7"],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Baskı Sonrası Uygulama Hizmetleri",
@@ -1607,45 +1607,12 @@
       50%       { box-shadow: 0 0 0 14px rgba(153,27,27,0); }
     }
 
-    /* ── DESKTOP: sağ alt köşe (varsayılan) ─────── */
+    /* ── DESKTOP varsayılan (JS override eder) ─── */
     #chat-widget {
       position: fixed;
-      bottom: 24px;
-      right: 24px;
-      left: auto;
       z-index: 50;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      gap: 12px;
-    }
-    #chat-box {
-      width: 340px;
-      max-height: 500px;
-      border-radius: 20px;
-    }
-
-    /* ── MOBİL: tam genişlik, alt yapışık ─────── */
-    @media (max-width: 639px) {
-      #chat-widget {
-        bottom: 0;
-        right: 0;
-        left: 0;
-        align-items: stretch;
-        gap: 0;
-      }
-      #chat-box {
-        width: 100%;
-        max-height: 78vh;
-        border-radius: 20px 20px 0 0;
-      }
-      #chat-toggle {
-        position: fixed !important;
-        bottom: 20px;
-        right: 20px;
-        margin: 0;
-        z-index: 60;
-      }
     }
   </style>
 
@@ -1736,7 +1703,7 @@
         answer: '📍 <b>SİMETRİ Matbaa</b> olarak şu adreste hizmet veriyoruz:\n\n🏢 Zübeyde Hanım Mahallesi\nKazım Karabekir Caddesi\nKültür İş Hanı No: 7/2\nAltındağ / ANKARA\n\nGoogle Maps\'te konumumuzu açıyorum! 🗺️',
         action: () => {
           setTimeout(() => {
-            window.open('https://maps.app.goo.gl/YaMWewLssMPktfhB8', '_blank');
+            window.open('https://maps.app.goo.gl/9DCHykgsP2JgydRb7', '_blank');
           }, 600);
         },
         next: ['Fiyat Teklifi Al', 'İletişime Geç', 'Bölgesel Lak Nedir?']
@@ -1793,6 +1760,55 @@
         setTimeout(() => setQuickBtns(startButtons), 500);
       }, 300);
     }
+
+    // ── LAYOUT: JS ile mobil/desktop konumlandırma ────────────
+    const chatWidget = document.getElementById('chat-widget');
+
+    function applyLayout() {
+      const isMobile = window.innerWidth < 640;
+      if (isMobile) {
+        // MOBİL: Altından tam genişlikte açılır
+        chatWidget.style.bottom  = '0';
+        chatWidget.style.left    = '0';
+        chatWidget.style.right   = '0';
+        chatWidget.style.top     = 'auto';
+        chatWidget.style.alignItems = 'stretch';
+        chatWidget.style.gap     = '0';
+
+        chatBox.style.width         = '100%';
+        chatBox.style.maxHeight     = '78vh';
+        chatBox.style.borderRadius  = '20px 20px 0 0';
+
+        chatToggle.style.position = 'fixed';
+        chatToggle.style.bottom   = '20px';
+        chatToggle.style.right    = '20px';
+        chatToggle.style.left     = 'auto';
+        chatToggle.style.zIndex   = '60';
+        chatToggle.style.margin   = '0';
+      } else {
+        // MASAÜSTÜ: Sağ alt köşe
+        chatWidget.style.bottom  = '24px';
+        chatWidget.style.right   = '24px';
+        chatWidget.style.left    = 'auto';
+        chatWidget.style.top     = 'auto';
+        chatWidget.style.alignItems = 'flex-end';
+        chatWidget.style.gap     = '12px';
+
+        chatBox.style.width         = '340px';
+        chatBox.style.maxHeight     = '500px';
+        chatBox.style.borderRadius  = '20px';
+
+        chatToggle.style.position = 'static';
+        chatToggle.style.bottom   = 'auto';
+        chatToggle.style.right    = 'auto';
+        chatToggle.style.left     = 'auto';
+        chatToggle.style.zIndex   = 'auto';
+        chatToggle.style.margin   = '0';
+      }
+    }
+
+    applyLayout();
+    window.addEventListener('resize', applyLayout);
 
     // Toggle aç/kapat
     chatToggle.addEventListener('click', () => {
