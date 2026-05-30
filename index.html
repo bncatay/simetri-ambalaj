@@ -1607,54 +1607,52 @@
       50%       { box-shadow: 0 0 0 14px rgba(153,27,27,0); }
     }
 
-    /* ── DESKTOP: sağ alt köşe ────────────────── */
-    @media (min-width: 640px) {
-      #chat-widget {
-        bottom: 24px;
-        right: 24px;
-        left: auto;
-        align-items: flex-end;
-      }
-      #chat-box {
-        width: 340px;
-        max-height: 500px;
-        border-radius: 20px;
-        position: static;
-      }
+    /* ── DESKTOP: sağ alt köşe (varsayılan) ─────── */
+    #chat-widget {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      left: auto;
+      z-index: 50;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+    }
+    #chat-box {
+      width: 340px;
+      max-height: 500px;
+      border-radius: 20px;
     }
 
-    /* ── MOBİL: tam genişlik, alt yapışık ──────── */
+    /* ── MOBİL: tam genişlik, alt yapışık ─────── */
     @media (max-width: 639px) {
       #chat-widget {
-        bottom: 0 !important;
-        right: 0 !important;
-        left: 0 !important;
+        bottom: 0;
+        right: 0;
+        left: 0;
         align-items: stretch;
         gap: 0;
       }
       #chat-box {
-        width: 100% !important;
-        max-height: 82vh !important;
-        border-radius: 20px 20px 0 0 !important;
-        position: static;
+        width: 100%;
+        max-height: 78vh;
+        border-radius: 20px 20px 0 0;
       }
       #chat-toggle {
-        position: fixed;
+        position: fixed !important;
         bottom: 20px;
         right: 20px;
         margin: 0;
         z-index: 60;
       }
-      #chat-box.chat-visible ~ #chat-toggle {
-        bottom: calc(82vh + 16px);
-      }
     }
   </style>
 
-  <div id="chat-widget" class="fixed z-50 flex flex-col items-end" style="bottom:24px; right:24px; left:auto;">
+  <div id="chat-widget">
 
     <!-- CHAT PENCERESİ -->
-    <div id="chat-box" class="chat-hidden overflow-hidden flex flex-col" style="max-height:500px; width:340px; background:#0f0f0f; border:1px solid rgba(153,27,27,0.3); border-radius:20px;">
+    <div id="chat-box" class="chat-hidden overflow-hidden flex flex-col" style="background:#0f0f0f; border:1px solid rgba(153,27,27,0.3);">
 
       <!-- BAŞLIK -->
       <div class="flex items-center gap-3 px-4 py-3 flex-shrink-0" style="background: linear-gradient(135deg, #7a0c0c, #c20000);">
@@ -1677,7 +1675,7 @@
     </div>
 
     <!-- AÇMA BALONU -->
-    <button id="chat-toggle" class="w-14 h-14 rounded-full text-white text-2xl shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 mt-3" style="background: linear-gradient(135deg, #991b1b, #c20000); flex-shrink:0;">
+    <button id="chat-toggle" class="w-14 h-14 rounded-full text-white text-2xl shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110" style="background: linear-gradient(135deg, #991b1b, #c20000); flex-shrink:0;">
       💬
     </button>
 
