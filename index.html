@@ -409,6 +409,7 @@
       <nav class="hidden lg:flex items-center gap-8">
         <a href="#anasayfa" class="nav-link text-sm text-silver-300 hover:text-white font-medium tracking-wide transition-colors">Ana Sayfa</a>
         <a href="#hizmetler" class="nav-link text-sm text-silver-300 hover:text-white font-medium tracking-wide transition-colors">Hizmetlerimiz</a>
+        <a href="#fiyatlar" class="nav-link text-sm text-silver-300 hover:text-white font-medium tracking-wide transition-colors">Fiyat Listesi</a>
         <a href="#hakkimizda" class="nav-link text-sm text-silver-300 hover:text-white font-medium tracking-wide transition-colors">Hakkımızda</a>
         <a href="#galeri" class="nav-link text-sm text-silver-300 hover:text-white font-medium tracking-wide transition-colors">Galeri</a>
         <a href="#iletisim" class="nav-link text-sm text-silver-300 hover:text-white font-medium tracking-wide transition-colors">İletişim</a>
@@ -436,6 +437,7 @@
       <nav class="flex flex-col gap-4">
         <a href="#anasayfa"   class="text-silver-200 hover:text-white font-medium py-2 border-b border-white/5 transition-colors" onclick="closeMobileMenu()">Ana Sayfa</a>
         <a href="#hizmetler"  class="text-silver-200 hover:text-white font-medium py-2 border-b border-white/5 transition-colors" onclick="closeMobileMenu()">Hizmetlerimiz</a>
+        <a href="#fiyatlar"   class="text-silver-200 hover:text-white font-medium py-2 border-b border-white/5 transition-colors" onclick="closeMobileMenu()">Fiyat Listesi</a>
         <a href="#hakkimizda" class="text-silver-200 hover:text-white font-medium py-2 border-b border-white/5 transition-colors" onclick="closeMobileMenu()">Hakkımızda</a>
         <a href="#galeri"     class="text-silver-200 hover:text-white font-medium py-2 border-b border-white/5 transition-colors" onclick="closeMobileMenu()">Galeri</a>
         <a href="#iletisim"   class="text-silver-200 hover:text-white font-medium py-2 transition-colors" onclick="closeMobileMenu()">İletişim</a>
@@ -614,9 +616,6 @@
 
         <!-- KART 1: SERİGRAFİ BASKI -->
         <div class="service-card glass rounded-2xl p-5 border border-white/[0.07] reveal col-span-1 sm:col-span-1 lg:col-span-2 cursor-pointer" onclick="openServiceModal('serigrafi')" style="transition-delay: 0.05s;">
-          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v4H3z" stroke="#991b1b" stroke-width="2" stroke-linejoin="round"/><path d="M6 9v10M18 9v10M12 9v10" stroke="#e60000" stroke-width="1.5" stroke-linecap="round"/><path d="M3 19h18" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
           <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Serigrafi Baskı</h3>
           <p class="text-silver-400 text-sm leading-relaxed">
             İpek baskı olarak da bilinen serigrafi baskı, kalın mürekkep katmanları ile yoğun renk ve benzersiz doku sunar. Lüks ambalaj imalatı ve özel tasarım kutu projelerinde yüksek etki sağlar.
@@ -628,9 +627,6 @@
 
         <!-- KART 2: KABARTMA LAK -->
         <div class="service-card glass rounded-2xl p-5 border border-white/[0.07] reveal col-span-1 sm:col-span-1 lg:col-span-2 cursor-pointer" onclick="openServiceModal('kabartma')" style="transition-delay: 0.1s;">
-          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M2 17l10-10 10 10" stroke="#991b1b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 21h20" stroke="#e60000" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
           <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Kabartma Lak</h3>
           <p class="text-silver-400 text-sm leading-relaxed">
             Seçili alanlarda 3 boyutlu yükseklik kazandıran premium lak uygulaması. Özel tasarım kutu, kartvizit ve lüks ambalaj imalatında göz alıcı dokunsal fark yaratır.
@@ -642,9 +638,6 @@
 
         <!-- KART 3: BÖLGESEL LAK -->
         <div class="service-card glass rounded-2xl p-5 border border-white/[0.07] reveal col-span-1 sm:col-span-2 lg:col-span-2 cursor-pointer" onclick="openServiceModal('bolgesel')" style="transition-delay: 0.15s;">
-          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#e60000"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
           <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Bölgesel Lak</h3>
           <p class="text-silver-400 text-sm leading-relaxed">
             Bölgesel lak (Spot UV); baskının yalnızca belirli alanlarına uygulanan, mat/parlak kontrast yaratarak lüks ambalaj imalatı ve özel tasarım kutu projelerine estetik derinlik katan premium bir tekniktir.
@@ -656,9 +649,6 @@
 
         <!-- KART 4: KUMLU LAK -->
         <div class="service-card glass rounded-2xl p-5 border border-white/[0.07] reveal col-span-1 sm:col-span-1 lg:col-span-3 cursor-pointer" onclick="openServiceModal('kumlu')" style="transition-delay: 0.2s;">
-          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 10h18M3 14h18M3 18h18" stroke="#991b1b" stroke-width="2" stroke-linecap="round"/><path d="M7 6v12M12 6v12M17 6v12" stroke="#e60000" stroke-width="1" stroke-linecap="round" opacity="0.5"/></svg>
-          </div>
           <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Kumlu Lak</h3>
           <p class="text-silver-400 text-sm leading-relaxed">
             Yüzeyde ince kum tanecikleri hissi uyandıran pürüzlü ve mat bir doku yaratan özel lak uygulaması. Görsel zenginliğin yanı sıra benzersiz dokunsal derinlik sunar.
@@ -670,9 +660,6 @@
 
         <!-- KART 5: SİMLİ LAK -->
         <div class="service-card glass rounded-2xl p-5 border border-white/[0.07] reveal col-span-1 sm:col-span-1 lg:col-span-3 cursor-pointer" onclick="openServiceModal('simli')" style="transition-delay: 0.25s;">
-          <div class="w-12 h-12 icon-bg rounded-xl flex items-center justify-center mb-5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l1 3h3l-2.5 2 1 3L12 8.5 9.5 10l1-3L8 5h3l1-3z" fill="#e60000" opacity="0.8"/><path d="M5 14l0.5 1.5H7l-1.2 1 0.5 1.5L5 17l-1.3 1 .5-1.5-1.2-1H4.5L5 14z" fill="#e60000" opacity="0.5"/><path d="M19 10l0.5 1.5H21l-1.2 1 0.5 1.5L19 13l-1.3 1 .5-1.5-1.2-1H18.5L19 10z" fill="#e60000" opacity="0.5"/></svg>
-          </div>
           <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Simli Lak</h3>
           <p class="text-silver-400 text-sm leading-relaxed">
             Işıkta parıldayan sim pigmentleri içeren lak kaplaması. Ürünlerinizde estetik pırıltılar yaratarak dikkat çekici ve oldukça şık tasarımlar elde etmenizi sağlar.
@@ -682,7 +669,162 @@
           </div>
         </div>
 
+        <!-- KART 6: PARLAK SELEFON -->
+        <div class="service-card glass rounded-2xl p-5 border border-white/[0.07] reveal col-span-1 sm:col-span-1 lg:col-span-3 cursor-pointer" onclick="openServiceModal('parlak_selefon')" style="transition-delay: 0.3s;">
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Parlak Selefon</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            Baskılı yüzeye uygulanan parlak polipropilen film kaplama. Renkleri canlılaştıran, suya ve çizilmeye karşı koruyan, yüksek parlaklık veren premium laminasyon işlemidir.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
+        <!-- KART 7: MAT SELEFON -->
+        <div class="service-card glass rounded-2xl p-5 border border-white/[0.07] reveal col-span-1 sm:col-span-1 lg:col-span-3 cursor-pointer" onclick="openServiceModal('mat_selefon')" style="transition-delay: 0.35s;">
+          <h3 class="text-lg font-bold text-white mb-2" style="font-family:'Poppins',sans-serif;">Mat Selefon</h3>
+          <p class="text-silver-400 text-sm leading-relaxed">
+            Işık yansımasını en aza indiren mat polipropilen film kaplama. Sofistike ve zarif bir görünüm sağlar; parmak izi bırakmaz, premium ambalaj ve kartvizitlerde sıklıkla tercih edilir.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs text-red-500 font-semibold">
+            <span>Detay →</span>
+          </div>
+        </div>
+
       </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FİYAT LİSTESİ
+  ═══════════════════════════════════════════ -->
+  <section id="fiyatlar" class="py-28 px-6 lg:px-12 relative overflow-hidden">
+    <div class="blob w-[500px] h-[500px] bg-red-900 top-1/2 left-[-150px] opacity-[0.07]"></div>
+    <div class="max-w-7xl mx-auto">
+
+      <!-- SECTION HEADER -->
+      <div class="text-center mb-16 reveal">
+        <div class="inline-flex items-center gap-2 glass-bordo px-4 py-2 rounded-full text-xs font-semibold text-red-400 tracking-widest uppercase mb-6">
+          Güncel Fiyatlar
+        </div>
+        <h2 class="text-4xl lg:text-5xl font-black mb-4 tracking-tight" style="font-family:'Poppins',sans-serif;">
+          <span class="gradient-text">Fiyat</span> Listemiz
+        </h2>
+        <p class="text-silver-400 text-lg max-w-xl mx-auto leading-relaxed">
+          Selefon kaplama ve lak hizmetlerimizin güncel fiyatları. Detaylı teklif için bizimle iletişime geçin.
+        </p>
+      </div>
+
+      <!-- PAKET FİYATLARI -->
+      <div class="grid sm:grid-cols-2 gap-6 mb-14 reveal">
+        <div class="relative glass rounded-3xl p-8 border border-red-900/40 overflow-hidden" style="background: linear-gradient(135deg, rgba(153,27,27,0.1), rgba(10,10,10,0.8));">
+          <div class="absolute top-0 right-0 w-40 h-40 rounded-full opacity-10" style="background: radial-gradient(circle, #c20000, transparent); transform: translate(30%,-30%);"></div>
+          <div class="inline-flex items-center gap-2 glass-bordo px-3 py-1 rounded-full text-xs font-bold text-red-400 tracking-widest uppercase mb-4">35/50'ye Kadar</div>
+          <div class="text-white font-black mb-1" style="font-family:'Poppins',sans-serif; font-size:clamp(1.8rem,4vw,2.5rem); line-height:1;">1000 <span class="text-xl font-semibold">Adet</span></div>
+          <div class="text-silver-300 text-sm mb-5 leading-relaxed"><span class="text-red-400 font-semibold">Selefon + Lak + Film Dahil</span><br/>Bölgesel veya Kabartma Lak</div>
+          <div class="flex items-end gap-2">
+            <span class="text-white font-black" style="font-family:'Poppins',sans-serif; font-size:clamp(2rem,5vw,3rem); line-height:1;">2.500 TL</span>
+            <span class="text-red-400 font-bold text-base mb-1">+KDV</span>
+          </div>
+        </div>
+        <div class="relative glass rounded-3xl p-8 border border-red-900/40 overflow-hidden" style="background: linear-gradient(135deg, rgba(153,27,27,0.1), rgba(10,10,10,0.8));">
+          <div class="absolute top-0 right-0 w-40 h-40 rounded-full opacity-10" style="background: radial-gradient(circle, #c20000, transparent); transform: translate(30%,-30%);"></div>
+          <div class="inline-flex items-center gap-2 glass-bordo px-3 py-1 rounded-full text-xs font-bold text-red-400 tracking-widest uppercase mb-4">50/70'e Kadar</div>
+          <div class="text-white font-black mb-1" style="font-family:'Poppins',sans-serif; font-size:clamp(1.8rem,4vw,2.5rem); line-height:1;">1000 <span class="text-xl font-semibold">Adet</span></div>
+          <div class="text-silver-300 text-sm mb-5 leading-relaxed"><span class="text-red-400 font-semibold">Selefon + Lak + Film Dahil</span><br/>Bölgesel veya Kabartma Lak</div>
+          <div class="flex items-end gap-2">
+            <span class="text-white font-black" style="font-family:'Poppins',sans-serif; font-size:clamp(2rem,5vw,3rem); line-height:1;">2.750 TL</span>
+            <span class="text-red-400 font-bold text-base mb-1">+KDV</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SELEFON FİYAT TABLOSU -->
+      <div class="glass rounded-3xl border border-white/[0.07] overflow-hidden reveal" style="transition-delay:0.1s;">
+        <div class="px-6 py-5 border-b border-white/[0.06]" style="background: linear-gradient(135deg, rgba(153,27,27,0.15), rgba(255,255,255,0.02));">
+          <h3 class="text-xl font-black text-white" style="font-family:'Poppins',sans-serif;">Selefon Fiyat Tablosu</h3>
+          <p class="text-silver-500 text-xs mt-1 tracking-wide">Parlak &amp; Mat Selefon — Ebata Göre Birim Fiyat (Adet Başına)</p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr style="background: rgba(153,27,27,0.08);">
+                <th class="px-5 py-3 text-left text-xs font-bold text-silver-300 uppercase tracking-widest">Ebat (cm)</th>
+                <th class="px-5 py-3 text-center text-xs font-bold text-silver-300 uppercase tracking-widest">Alan (cm²)</th>
+                <th class="px-5 py-3 text-center text-xs font-bold text-white uppercase tracking-widest">Parlak</th>
+                <th class="px-5 py-3 text-center text-xs font-bold text-silver-300 uppercase tracking-widest">Mat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors"><td class="px-5 py-3 font-semibold text-white">25×35</td><td class="px-5 py-3 text-center text-silver-500">875</td><td class="px-5 py-3 text-center font-bold text-white">0,65 TL</td><td class="px-5 py-3 text-center text-silver-400">0,75 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors" style="background:rgba(255,255,255,0.01);"><td class="px-5 py-3 font-semibold text-white">29×41</td><td class="px-5 py-3 text-center text-silver-500">1.189</td><td class="px-5 py-3 text-center font-bold text-white">0,80 TL</td><td class="px-5 py-3 text-center text-silver-400">0,85 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors"><td class="px-5 py-3 font-semibold text-white">32×45</td><td class="px-5 py-3 text-center text-silver-500">1.440</td><td class="px-5 py-3 text-center font-bold text-white">0,90 TL</td><td class="px-5 py-3 text-center text-silver-400">1,00 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors" style="background:rgba(255,255,255,0.01);"><td class="px-5 py-3 font-semibold text-white">35×50</td><td class="px-5 py-3 text-center text-silver-500">1.750</td><td class="px-5 py-3 text-center font-bold text-white">1,00 TL</td><td class="px-5 py-3 text-center text-silver-400">1,15 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors"><td class="px-5 py-3 font-semibold text-white">35×65</td><td class="px-5 py-3 text-center text-silver-500">2.275</td><td class="px-5 py-3 text-center font-bold text-white">1,10 TL</td><td class="px-5 py-3 text-center text-silver-400">1,30 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors" style="background:rgba(255,255,255,0.01);"><td class="px-5 py-3 font-semibold text-white">33×70</td><td class="px-5 py-3 text-center text-silver-500">2.310</td><td class="px-5 py-3 text-center font-bold text-white">1,25 TL</td><td class="px-5 py-3 text-center text-silver-400">1,40 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors"><td class="px-5 py-3 font-semibold text-white">41×57</td><td class="px-5 py-3 text-center text-silver-500">2.337</td><td class="px-5 py-3 text-center font-bold text-white">1,30 TL</td><td class="px-5 py-3 text-center text-silver-400">1,60 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors" style="background:rgba(255,255,255,0.01);"><td class="px-5 py-3 font-semibold text-white">45×64</td><td class="px-5 py-3 text-center text-silver-500">2.880</td><td class="px-5 py-3 text-center font-bold text-white">1,50 TL</td><td class="px-5 py-3 text-center text-silver-400">1,70 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors"><td class="px-5 py-3 font-semibold text-white">50×60</td><td class="px-5 py-3 text-center text-silver-500">3.000</td><td class="px-5 py-3 text-center font-bold text-white">1,60 TL</td><td class="px-5 py-3 text-center text-silver-400">1,80 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors" style="background:rgba(255,255,255,0.01);"><td class="px-5 py-3 font-semibold text-white">50×70</td><td class="px-5 py-3 text-center text-silver-500">3.500</td><td class="px-5 py-3 text-center font-bold text-white">1,75 TL</td><td class="px-5 py-3 text-center text-silver-400">1,85 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors"><td class="px-5 py-3 font-semibold text-white">57×82</td><td class="px-5 py-3 text-center text-silver-500">4.674</td><td class="px-5 py-3 text-center font-bold text-white">2,60 TL</td><td class="px-5 py-3 text-center text-silver-400">2,75 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors" style="background:rgba(255,255,255,0.01);"><td class="px-5 py-3 font-semibold text-white">60×84</td><td class="px-5 py-3 text-center text-silver-500">5.040</td><td class="px-5 py-3 text-center font-bold text-white">2,85 TL</td><td class="px-5 py-3 text-center text-silver-400">3,00 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors"><td class="px-5 py-3 font-semibold text-white">64×90</td><td class="px-5 py-3 text-center text-silver-500">5.760</td><td class="px-5 py-3 text-center font-bold text-white">3,10 TL</td><td class="px-5 py-3 text-center text-silver-400">3,25 TL</td></tr>
+              <tr class="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors" style="background:rgba(255,255,255,0.01);"><td class="px-5 py-3 font-semibold text-white">70×100</td><td class="px-5 py-3 text-center text-silver-500">7.000</td><td class="px-5 py-3 text-center font-bold text-white">3,00 TL</td><td class="px-5 py-3 text-center text-silver-400">3,40 TL</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Ek Fiyatlar -->
+        <div class="grid sm:grid-cols-3 gap-0 border-t border-white/[0.06]">
+          <div class="px-6 py-4 border-b sm:border-b-0 sm:border-r border-white/[0.06] flex items-center gap-3">
+            <div class="w-8 h-8 flex-shrink-0 rounded-lg flex items-center justify-center" style="background:rgba(153,27,27,0.2);border:1px solid rgba(153,27,27,0.3);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="#e60000" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <div class="text-xs text-silver-500 uppercase tracking-widest mb-0.5">Kazanlı Kesim — 1.000 Adet</div>
+              <div class="text-white font-bold">780 TL &nbsp;<span class="text-silver-500 font-normal text-sm">/ 1000+ adet 260 TL</span></div>
+            </div>
+          </div>
+          <div class="px-6 py-4 border-b sm:border-b-0 sm:border-r border-white/[0.06] flex items-center gap-3">
+            <div class="w-8 h-8 flex-shrink-0 rounded-lg flex items-center justify-center" style="background:rgba(153,27,27,0.2);border:1px solid rgba(153,27,27,0.3);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#e60000" stroke-width="2"/><path d="M8 12h8" stroke="#e60000" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <div class="text-xs text-silver-500 uppercase tracking-widest mb-0.5">Parça Film Çıkış</div>
+              <div class="text-white font-bold">260 TL</div>
+            </div>
+          </div>
+          <div class="px-6 py-4 flex items-center gap-3">
+            <div class="w-8 h-8 flex-shrink-0 rounded-lg flex items-center justify-center" style="background:rgba(153,27,27,0.2);border:1px solid rgba(153,27,27,0.3);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z" fill="#e60000"/></svg>
+            </div>
+            <div>
+              <div class="text-xs text-silver-500 uppercase tracking-widest mb-0.5">Parça Selefon (Mat-Parlak)</div>
+              <div class="text-white font-bold">650 TL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UYARI -->
+      <div class="mt-8 glass-bordo rounded-2xl px-6 py-5 border border-red-900/30 reveal" style="transition-delay:0.2s;">
+        <div class="flex items-start gap-3">
+          <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#e60000" stroke-width="2"/><path d="M12 8v4M12 16h.01" stroke="#e60000" stroke-width="2" stroke-linecap="round"/></svg>
+          <div class="text-sm text-silver-400 leading-relaxed">
+            <p><span class="text-red-400 font-semibold">Önemli:</span> Selefon atılmış işlerde geçerli değildir — sadece laklı işlerde geçerlidir.</p>
+            <p class="mt-1">Bölgesel &amp; kabartma işlerde fiyat değişikliği yoktur. Fiyatlar iş teslimi peşin ödemelerde geçerlidir.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center mt-10 reveal" style="transition-delay:0.3s;">
+        <a href="#iletisim" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-semibold text-white text-sm transition-all duration-300 border-glow-hover hover:scale-[1.02]"
+           style="background: linear-gradient(135deg, #991b1b, #c20000); box-shadow: 0 0 30px rgba(153,27,27,0.35);">
+          Fiyat Teklifi Al →
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -892,6 +1034,24 @@
             <h4 class="text-base font-bold text-white tracking-wide">Simli Lak</h4>
           </div>
         </div>
+        <!-- Gallery item 6: Parlak Selefon -->
+        <div class="gallery-item w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm h-48 lg:h-64 relative group overflow-hidden cursor-pointer" onclick="openLightbox('Parlak Selefon Çalışması', 'parlak_selefon')" style="background: linear-gradient(to top, rgba(10,10,10,0.88) 0%, rgba(10,10,10,0.25) 50%, rgba(10,10,10,0.05) 100%), url('gorsel/parlak_selefon_1.png') center/cover no-repeat, linear-gradient(135deg,#1a2a3a,#0d1a2a); border: 1px solid rgba(153,27,27,0.25);" role="img" aria-label="Parlak selefon kaplama – polipropilen laminasyon lüks ambalaj">
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-red-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <!-- Text Content (Bottom Aligned) -->
+          <div class="absolute bottom-0 left-0 right-0 p-5 text-left z-10">
+            <h4 class="text-base font-bold text-white tracking-wide">Parlak Selefon</h4>
+          </div>
+        </div>
+        <!-- Gallery item 7: Mat Selefon -->
+        <div class="gallery-item w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm h-48 lg:h-64 relative group overflow-hidden cursor-pointer" onclick="openLightbox('Mat Selefon Çalışması', 'mat_selefon')" style="background: linear-gradient(to top, rgba(10,10,10,0.88) 0%, rgba(10,10,10,0.25) 50%, rgba(10,10,10,0.05) 100%), url('gorsel/mat_selefon_1.png') center/cover no-repeat, linear-gradient(135deg,#1a1a1a,#2a2a2a); border: 1px solid rgba(153,27,27,0.25);" role="img" aria-label="Mat selefon kaplama – mat laminasyon premium kutu ambalaj">
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-red-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <!-- Text Content (Bottom Aligned) -->
+          <div class="absolute bottom-0 left-0 right-0 p-5 text-left z-10">
+            <h4 class="text-base font-bold text-white tracking-wide">Mat Selefon</h4>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1024,6 +1184,8 @@
                   <option value="bolgesel-lak" style="background:#111; color:#e8e8e8;">Bölgesel Lak</option>
                   <option value="kumlu-lak" style="background:#111; color:#e8e8e8;">Kumlu Lak</option>
                   <option value="simli-lak" style="background:#111; color:#e8e8e8;">Simli Lak</option>
+                  <option value="parlak-selefon" style="background:#111; color:#e8e8e8;">Parlak Selefon</option>
+                  <option value="mat-selefon" style="background:#111; color:#e8e8e8;">Mat Selefon</option>
                 </select>
               </div>
 
@@ -1381,6 +1543,16 @@
         'gorsel/simli_lak_3.png',
         'gorsel/simli_lak_4.png',
         'gorsel/simli_lak_5.png'
+      ],
+      parlak_selefon: [
+        'gorsel/parlak_selefon_1.png',
+        'gorsel/parlak_selefon_2.png',
+        'gorsel/parlak_selefon_3.png'
+      ],
+      mat_selefon: [
+        'gorsel/mat_selefon_1.png',
+        'gorsel/mat_selefon_2.png',
+        'gorsel/mat_selefon_3.png'
       ]
     };
 
@@ -1480,6 +1652,20 @@
         definition: "Simli Lak (Glitter UV), lak solüsyonunun içerisine mikron boyutunda metalize parlak sim pigmentleri (altın, gümüş veya hologram renklerde) karıştırılarak uygulanan özel ve ışıltılı bir kaplama türüdür.",
         benefits: "Özellikle kutlama kartlarında, çocuk kitabı kapaklarında, kozmetik ve lüks tüketim ambalajlarında ışığa göre renk değiştiren parıltılı ve dikkat çekici bir estetik zenginlik sağlar.",
         process: "1. Sim pigmentleri şeffaf serigrafi lakı ile homojen şekilde karıştırılır.<br>2. Karışım serigrafi baskı makinesiyle belirlenen alanlara kalın bir tabaka halinde uygulanır.<br>3. UV kurutma fırınından geçirilerek simlerin kağıda kalıcı olarak kilitlenmesi sağlanır."
+      },
+      parlak_selefon: {
+        title: "Parlak Selefon",
+        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#e60000" stroke-width="2"/><path d="M7 8l3 3-3 3M13 14h4" stroke="#e60000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+        definition: "Parlak Selefon (Glossy Laminasyon), baskılı kağıt veya karton yüzeylere sıcak veya soğuk yapıştırma yöntemiyle uygulanan şeffaf parlak polipropilen (BOPP) filmdir. Yüzeye yüksek parlaklık, canlı renk ve koruma kazandırır.",
+        benefits: "Renkleri belirgin şekilde canlandırarak görsel etkiyi artırır. Suya, neme ve çizilmeye karşı güçlü bir koruma katmanı oluşturur. Katalog, broşür, ambalaj kutusu ve kartvizitlerde sıklıkla tercih edilir.",
+        process: "1. Hazır baskı ürünü laminasyon makinesine yerleştirilir.<br>2. Isı ve basınç yardımıyla parlak BOPP film yüzeye mükemmel şekilde yapıştırılır.<br>3. Soğutularak kesim yapılır; bölgesel lak veya kabartma lak ile kombine edilebilir."
+      },
+      mat_selefon: {
+        title: "Mat Selefon",
+        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#e60000" stroke-width="2"/><path d="M7 12h10M12 7v10" stroke="#e60000" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/></svg>`,
+        definition: "Mat Selefon (Mat Laminasyon), baskılı yüzeylere uygulanan ve ışık yansımasını minimize eden mat görünümlü şeffaf bir polipropilen filmdir. Sofistike, zarif ve modern bir his verir.",
+        benefits: "Parmak izi ve yağ lekesi bırakmaz, dokunuşta kadife gibi bir his sunar. Lüks kozmetik, parfüm kutusu ve premium ambalajlarda yaygın olarak kullanılır. Bölgesel lak ile kombinlendiğinde mat-parlak kontrast etkisi yaratılabilir.",
+        process: "1. Baskılı ürün mat film laminasyon makinesine beslenir.<br>2. Isıl rulo baskısıyla mat BOPP film kağıda tamamen yapıştırılır.<br>3. Soğutularak kesilir; üzerine bölgesel lak veya kabartma lak uygulanabilir."
       }
     };
 
