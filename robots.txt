@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /gorsel/
+Disallow: /scratch/
+
+Sitemap: https://www.simetriambalaj.com.tr/sitemap.xml
